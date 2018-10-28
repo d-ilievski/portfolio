@@ -1,9 +1,9 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "D.I. | Web Developer & Web Designer",
+  "name": "Daniel Ilievski | Web Developer and Web Designer",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "icon.gif",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }
