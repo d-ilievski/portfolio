@@ -1,0 +1,75 @@
+.Logo {
+    font-family: Arial, Helvetica, sans-serif;
+
+    max-width: 0;
+    max-height: 0;
+    
+
+    overflow: hidden;
+    animation-name: grow;
+    animation-duration: 1.5s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+
+    white-space: nowrap;
+    
+}
+
+.Name {
+    font-size: 400%;
+    margin: -5px;
+}
+
+.Bubble {
+    width: 40px;
+    margin-top: -18em;
+  border: 4px solid #00bfb6;
+  border-radius: 30px;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #00bfb6;
+
+  position: relative;
+  
+}
+
+.Bubble:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid #00bfb6;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #00bfb6;
+    border-bottom: 10px solid transparent;
+    left: 20px;
+    bottom: -23px;
+  }
+  
+  .Bubble:after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid #fff;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #fff;
+    border-bottom: 10px solid transparent;
+    left: 24px;
+    bottom: -13px;
+  }
+
+
+@keyframes grow {
+    0% {border: 5px solid #000000; max-width: 0; max-height: 0; padding: 0;}
+    40% {border: 5px solid #000000; max-width: 0; max-height: 350px; padding: 20px 0px;}
+    85% {border: 5px solid #000000; max-width: 1500px; max-height: 350px; padding: 20px 50px;}
+    100% {border: 5px solid #000000; max-width: 1500px; max-height: 350px; padding: 20px 50px;}
+}
+
+@keyframes pop-hi {
+    0% {width: 0; height: 0; }
+    100% {width: 40px; border: 4px solid #00bfb6; padding: 20px; overflow: visible}
+}

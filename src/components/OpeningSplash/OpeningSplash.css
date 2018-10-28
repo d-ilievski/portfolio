@@ -1,0 +1,33 @@
+.OpeningSplash {
+    display: flex;
+    align-items: center;
+    justify-content : center;
+    height: 100%;
+    width: 100%;
+    z-index: 500;
+}
+
+.BlackBackground {
+    animation-name: drawerOpen;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+
+    width: 0%;
+    height: 100%;
+    z-index: 400;
+    background: black;
+    overflow: hidden;
+}
+
+.Container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+
+@keyframes drawerOpen {
+    0% {width: 0%}
+    100% {width: 30%}
+}
