@@ -12,12 +12,24 @@ class OpeningSplash extends Component {
     
 
     render() {
+
+        const wowClasses = [classes.BlackBackground];
+        if (this.props.initial) {
+            wowClasses.push(classes.BlackBackgroundInitialOpen);
+        } else {
+            if(this.props.open) {
+                wowClasses.push(classes.BlackBackgroundOpen);
+            } else {
+                wowClasses.push(classes.BlackBackgroundClose);
+            }
+        }
+
         return (
             <div className={classes.Container}>
                 <div className={classes.OpeningSplash}>
                     <Logo/>
                 </div>
-                <div className={classes.BlackBackground}>
+                <div className={wowClasses.join(' ')}>
                     <Navigation choiceHandler={this.props.choiceHandler}/>
                 </div>
             </div>

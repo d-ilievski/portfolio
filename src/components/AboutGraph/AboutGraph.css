@@ -1,0 +1,47 @@
+.Graph {
+    margin: 30px 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    height: 400px;
+    width: 100%;
+}
+
+.GraphChart {
+    width: 700px;
+    height: 100%;
+    background: black;
+}
+
+.GraphOptions {
+    margin: 0 50px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+.GraphOption {
+    writing-mode: vertical-lr;
+    text-orientation: sideways;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: darkgray;
+
+    cursor: pointer;
+}
+
+.VerticalLine {
+    writing-mode: vertical-lr;
+    text-orientation: sideways;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.GraphOption:hover {
+    transform: scale(1.2);
+}
+
+.GraphOptionActive {
+    transform: scale(1.2);
+    color: black;
+}

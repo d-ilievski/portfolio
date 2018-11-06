@@ -1,0 +1,36 @@
+.Container {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    box-sizing: border-box;
+
+}
+
+.ServicesSplash {
+    width: 100%;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Heading {
+    padding: 10px 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.Content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.Image {
+    width: 100%;
+}
+
+@keyframes grow {
+    from {width: 50px;}
+    to {width: 300px;}
+}

@@ -1,0 +1,70 @@
+.SidebarContainer {
+    width: 100px;
+    height: 100vh;
+    position: fixed;
+    background: transparent;
+}
+
+.Sidebar {
+    width: 100%;
+    height: 100%;
+    background: black;
+    position: relative;
+    left: -100px;
+
+    transition-property: left;
+    transition-duration: 1s;
+}
+
+.SidebarOpen {
+    animation-name: open;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+}
+
+.SidebarClose {
+    animation-name: close;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+.Menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+    list-style: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.Menu li {
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transform: scale(1);
+}
+
+.Menu li:hover {
+    transform: scale(1.2);
+}
+
+@keyframes open {
+    0% {
+        left: -100px;}
+    100% {
+        left: 0}
+}
+
+@keyframes close {
+    0% {
+        left: 0}
+    100% {
+        left: -100px;}
+}
+

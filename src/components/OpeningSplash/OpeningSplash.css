@@ -8,11 +8,6 @@
 }
 
 .BlackBackground {
-    animation-name: drawerOpen;
-    animation-duration: 1s;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-
     width: 0%;
     height: 100%;
     z-index: 400;
@@ -26,8 +21,32 @@
     display: flex;
 }
 
+.BlackBackgroundClose {
+    animation-name: drawerClose;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.BlackBackgroundInitialOpen {
+    animation-name: drawerOpen;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.BlackBackgroundOpen {
+    animation-name: drawerOpen;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
 
 @keyframes drawerOpen {
     0% {width: 0%}
     100% {width: 30%}
+}
+
+@keyframes drawerClose {
+    0% {width: 30%}
+    100% {width: 0%}
 }
