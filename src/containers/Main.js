@@ -18,7 +18,7 @@ class Main extends Component {
     state = {
         sidebarOpen: false,
         initialState: true,
-        mainSidebarOpen: true
+        mainSidebarOpen: false
     }
 
     onScroll = () => {

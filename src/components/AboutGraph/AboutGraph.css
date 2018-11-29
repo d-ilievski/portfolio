@@ -8,16 +8,44 @@
 }
 
 .GraphChart {
-    width: 700px;
+    width: 600px;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background: repeating-linear-gradient(
+    to right,
+    #ddd,
+    #ddd 1px,
+    #fff 1px,
+    #fff 10%
+  );
+}
+
+.GraphChartItem {
+    height: 20px;
     background: black;
+    width: 0;
+    
+    animation-duration: 1s;
+    animation-delay: 600ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
 }
 
 .GraphOptions {
-    margin: 0 50px;
+    margin: 0;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
+    transform: translateX(50px);
+    
+    opacity: 0;
+    animation-name: appearOptions;
+    animation-delay: 350ms;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
 }
 
 .GraphOption {
@@ -28,6 +56,8 @@
     color: darkgray;
 
     cursor: pointer;
+
+    transition: all 100ms ease;
 }
 
 .VerticalLine {
@@ -44,4 +74,72 @@
 .GraphOptionActive {
     transform: scale(1.2);
     color: black;
+}
+
+.Percentage {
+    opacity: 0;
+
+    position: absolute;
+    left: 100%;
+
+    animation-name: appearPerc;
+    animation-delay: 1000ms;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes appearPerc {
+    from {opacity: 0;}
+    to {opacity: 1; transform: translateX(0) }
+}
+
+.Item60 {
+    animation-name: chartItem60;
+}
+
+.Item70 {
+    animation-name: chartItem70;
+}
+
+.Item80 {
+    animation-name: chartItem80;
+}
+
+.Item90 {
+    animation-name: chartItem90;
+}
+
+.Item100 {
+    animation-name: chartItem100;
+}
+
+@keyframes appearOptions {
+    0% {opacity: 0;}
+    100% {opacity: 1; transform: translateX(0);}
+}
+
+@keyframes chartItem60 {
+    from {width: 0;}
+    to {width: 60%;}
+}
+
+@keyframes chartItem70 {
+    from {width: 0;}
+    to {width: 70%;}
+}
+
+@keyframes chartItem80 {
+    from {width: 0;}
+    to {width: 80%;}
+}
+
+@keyframes chartItem90 {
+    from {width: 0;}
+    to {width: 90%;}
+}
+
+@keyframes chartItem100 {
+    from {width: 0;}
+    to {width: 100%;}
 }

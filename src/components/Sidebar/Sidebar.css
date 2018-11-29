@@ -14,19 +14,19 @@
 
     transition-property: left;
     transition-duration: 1s;
+
+    animation-fill-mode: forwards;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in-out;
 }
 
 .SidebarOpen {
     animation-name: open;
-    animation-fill-mode: forwards;
-    animation-duration: 1s;
-    animation-delay: 0.3s;
+    animation-delay: 100ms;
 }
 
 .SidebarClose {
     animation-name: close;
-    animation-fill-mode: forwards;
-    animation-duration: 1s;
 }
 
 .Menu {

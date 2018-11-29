@@ -34,20 +34,16 @@ class ServicesSplash extends Component {
             <div className={classes.Container}>
                 <div className={classes.ServicesSplash}>
 
-                    <h1 className={classes.Heading}><span style={{borderBottom: '3px solid black'}}>ABOUT</span></h1>
+                    <h1 className={classes.Heading}>
+                        <span
+                            style={{
+                            borderBottom: '3px solid black'
+                        }}>ABOUT</span>
+                    </h1>
 
                     <div className={classes.Content}>
 
-                        <div
-                            style={{
-                            width: '230px',
-                            margin: '30px 30px 0 50px',
-                            border: '3px solid black',
-                            padding: '20px',
-                            maxHeight: 'min-content'
-                        }}
-                        
-                        className={'wow slideInLeft'}>
+                        <div className={[classes.NameCard, 'wow'].join(" ")}>
                             <img className={classes.Image} alt='slika na daniel hehe' src={daniel}/>
                             <h3>Who dis?</h3>
                             <p>I'm Daniel Ilievski, developer and graphic designer from Skopje, Macedonia.</p>
@@ -57,8 +53,10 @@ class ServicesSplash extends Component {
                         </div>
 
                         <div>
-                            <h2>SKILLS</h2>
-                            <AboutGraph choiceHandler={this.graphChoiceHandler} active={this.state.activeGraph}/>
+                            <h2 style={{marginTop: '0'}}>SKILLS</h2>
+                            <AboutGraph
+                                choiceHandler={this.graphChoiceHandler}
+                                active={this.state.activeGraph}/>
                         </div>
 
                     </div>

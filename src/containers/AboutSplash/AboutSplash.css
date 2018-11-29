@@ -21,7 +21,7 @@
 
 .Content {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-flow: row wrap;
     width: 100%;
 }
@@ -30,7 +30,6 @@
     width: 100%;
 }
 
-@keyframes grow {
-    from {width: 50px;}
-    to {width: 300px;}
+.NameCard {
+    border-width: 3px; border-style: solid; border-color: #000000; max-width: 230px; max-height: fit-content; padding: 20px 20px;
 }

@@ -6,66 +6,100 @@ class AboutGraph extends Component {
 
     componentDidMount() {
         new WOW
-        .WOW()
-        .init();
+            .WOW()
+            .init();
     }
-    
 
     generateGraphOptions = () => {
+        return (
+            <div className={[classes.GraphOptions, 'wow'].join(' ')}>
+                <span
+                    className={[
+                    classes.GraphOption, this.props.active === 1
+                        ? classes.GraphOptionActive
+                        : {}
+                ].join(' ')}
+                    onClick={() => this.props.choiceHandler(1)}>
+                    DEVELOPER
+                </span>
+
+                <span className={classes.VerticalLine}>|</span>
+
+                <span
+                    className={[
+                    classes.GraphOption, this.props.active === 2
+                        ? classes.GraphOptionActive
+                        : {}
+                ].join(' ')}
+                    onClick={() => this.props.choiceHandler(2)}>
+                    GRAPHIC DESIGNER
+                </span>
+            </div>
+        );
+    }
+
+    generateGraph = () => {
         if (this.props.active === 1) {
-            return ([<div className={[classes.GraphOptions, 'wow slideInDown'].join(' ')} key='1'
-                        data-wow-delay="2s">
-                    <span className={[classes.GraphOption, classes.GraphOptionActive].join(' ')} onClick={() => this.props.choiceHandler(1)}>
-                        DEVELOPER
-                    </span>
+            return (
+                <div style={{display: 'flex', flexDirection: 'row'}}>
+                <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center', margin: '0 20px 0 50px'}}>
+                <span>React</span>
+                <span>AWS</span>
+                <span>R</span>
+                <span>ReactReact</span>
+                <span>React</span>
+                <span>ReactReactReact</span>
+                </div>
+                <div className={classes.GraphChart}>
+                    <div style={{
+                        display: 'flex'
+                    }}>
+                        <div className={[classes.GraphChartItem, 'wow', classes.Item60].join(' ')}></div>
+                    </div>
+                    <div style={{
+                        display: 'flex'
+                    }}>
+                        <div className={[classes.GraphChartItem, 'wow', classes.Item70].join(' ')}></div>
+                    </div>
+                    <div style={{
+                        display: 'flex'
+                    }}>
+                        <div className={[classes.GraphChartItem, 'wow', classes.Item100].join(' ')}></div>
+                    </div>
+                    <div style={{
+                        display: 'flex'
+                    }}>
+                        <div className={[classes.GraphChartItem, 'wow', classes.Item60].join(' ')}></div>
+                    </div>
+                    <div style={{
+                        display: 'flex'
+                    }}>
+                        <div className={[classes.GraphChartItem, 'wow', classes.Item70].join(' ')}></div>
+                    </div>
+                    <div style={{
+                        display: 'flex'
+                    }}>
+                        <div className={[classes.GraphChartItem, 'wow', classes.Item100].join(' ')}></div>
+                    </div>
 
-                    <span className={classes.VerticalLine}>|</span>
-
-                    <span className={classes.GraphOption} onClick={() => this.props.choiceHandler(2)}>
-                        GRAPHIC DESIGNER
-                    </span></div>]
+                </div>
+                </div>
             );
         } else if (this.props.active === 2) {
-            return ([<div className={classes.GraphOptions} key='2'>
-                    <span className={classes.GraphOption} onClick={() => this.props.choiceHandler(1)}>
-                        DEVELOPER
-                    </span>
-
-                    <span className={classes.VerticalLine}>|</span>
-
-                    <span className={[classes.GraphOption, classes.GraphOptionActive].join(' ')} onClick={() => this.props.choiceHandler(2)}>
-                        GRAPHIC DESIGNER
-                    </span></div>]
+            return (
+                <div className={classes.GraphChart}></div>
             );
         } else 
             return 'Error';
         }
     
-        generateGraph = () => {
-            if (this.props.active === 1) {
-                return (
-                <div className={classes.GraphChart}>
-                    
-                </div>
-                );
-            } else if (this.props.active === 2) {
-                return (
-                    <div className={classes.GraphChart}>
-                        
-                    </div>
-                    );
-            } else 
-                return 'Error';
-            }    
-        
-
     render() {
-    return (
-        <div className={classes.Graph}>
-        {this.generateGraphOptions()}
-        {this.generateGraph()}
-        </div>
-    );
+        return (
+            <div className={classes.Graph}>
+                {this.generateGraphOptions()}
+                {this.generateGraph()}
+            </div>
+        );
     }
 };
 
