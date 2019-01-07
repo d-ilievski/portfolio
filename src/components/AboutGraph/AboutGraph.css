@@ -19,8 +19,51 @@
     #ddd,
     #ddd 1px,
     #fff 1px,
-    #fff 10%
+    #fff 9.99%
   );
+}
+
+.GraphVariables {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px 0 50px;
+    min-width: 130px;
+    text-align: center;
+}
+
+.GraphVariables span:nth-child(1) {
+    animation-delay: 500ms;
+}
+.GraphVariables span:nth-child(2) {
+    animation-delay: 550ms;
+}
+.GraphVariables span:nth-child(3) {
+    animation-delay: 600ms;
+}
+.GraphVariables span:nth-child(4) {
+    animation-delay: 650ms;
+}
+.GraphVariables span:nth-child(5) {
+    animation-delay: 700ms;
+}
+.GraphVariables span:nth-child(6) {
+    animation-delay: 750ms;
+}
+
+.GraphVariable {
+    opacity: 0;
+    transform: translateY(-30px);
+    animation-name: appearVars;
+    animation-duration: 300ms;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appearVars {
+    from {opacity: 0;}
+    to {opacity: 1; transform: translateY(0);}
 }
 
 .GraphChartItem {
@@ -29,9 +72,15 @@
     width: 0;
     
     animation-duration: 1s;
-    animation-delay: 600ms;
+    animation-delay: 800ms;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
+
+    transition: background .1s ease;
+}
+.GraphChartItem:hover {
+    background: rgb(70, 70, 70);
+    cursor: pointer;
 }
 
 .GraphOptions {
@@ -51,7 +100,7 @@
 .GraphOption {
     writing-mode: vertical-lr;
     text-orientation: sideways;
-    font-size: 1.1em;
+    font-size: .7em;
     font-weight: bold;
     color: darkgray;
 
@@ -63,16 +112,17 @@
 .VerticalLine {
     writing-mode: vertical-lr;
     text-orientation: sideways;
-    font-size: 1.1em;
+    font-size: .7em;
     font-weight: bold;
+    color: darkgray;
 }
 
 .GraphOption:hover {
-    transform: scale(1.2);
+    transform: scale(1.7);
 }
 
 .GraphOptionActive {
-    transform: scale(1.2);
+    transform: scale(1.7);
     color: black;
 }
 

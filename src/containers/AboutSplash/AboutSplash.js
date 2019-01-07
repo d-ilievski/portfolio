@@ -35,10 +35,7 @@ class ServicesSplash extends Component {
                 <div className={classes.ServicesSplash}>
 
                     <h1 className={classes.Heading}>
-                        <span
-                            style={{
-                            borderBottom: '3px solid black'
-                        }}>ABOUT</span>
+                        <span>ABOUT</span>
                     </h1>
 
                     <div className={classes.Content}>

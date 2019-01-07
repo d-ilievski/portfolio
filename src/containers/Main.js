@@ -4,6 +4,7 @@ import Splash from '../components/Splash/Splash';
 import OpeningSplash from '../components/OpeningSplash/OpeningSplash';
 import AboutSplash from './AboutSplash/AboutSplash';
 import Sidebar from '../components/Sidebar/Sidebar';
+import ServicesSplash from '../components/ServicesSplash/ServicesSplash';
 
 class Main extends Component {
 
@@ -41,7 +42,10 @@ class Main extends Component {
                 <Sidebar open={this.state.sidebarOpen} initialState={this.state.initialState}/>
 
                 <Splash>
-                    <OpeningSplash initial={this.state.initialState} open={this.state.mainSidebarOpen} choiceHandler={this.handleChoice}/>
+                    <OpeningSplash
+                        initial={this.state.initialState}
+                        open={this.state.mainSidebarOpen}
+                        choiceHandler={this.handleChoice}/>
                 </Splash>
 
                 <div ref={el => this["section-2"] = el}>
@@ -49,11 +53,13 @@ class Main extends Component {
                 </div>
 
                 <div ref={el => this["section-3"] = el}>
-                    <Splash boja="white"></Splash>
+                    <Splash>
+                        <ServicesSplash/>
+                    </Splash>
                 </div>
 
                 <div ref={el => this["section-4"] = el}>
-                    <Splash boja="black"/>
+                    <Splash boja="white"/>
                 </div>
 
                 <div ref={el => this["section-5"] = el}>

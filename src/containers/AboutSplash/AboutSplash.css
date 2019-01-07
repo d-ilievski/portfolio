@@ -17,6 +17,11 @@
     padding: 10px 30px;
     box-sizing: border-box;
     text-align: center;
+    margin: 50px auto;
+}
+
+.Heading span {
+    border-bottom: 3px solid black;
 }
 
 .Content {

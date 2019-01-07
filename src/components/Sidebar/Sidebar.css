@@ -3,6 +3,7 @@
     height: 100vh;
     position: fixed;
     background: transparent;
+    z-index: 1000;
 }
 
 .Sidebar {
