@@ -22,17 +22,25 @@ class ServicesSplash extends Component {
         this.ratioY = (cHeight + 100) / eHeight;
     }
 
-    handleChange = (event) => {
-        if(!this.state.designerMode)
-            this.fill.style.transform = 'scaleX('+this.ratioX+') scaleY('+this.ratioY+')';
+    handleChange = () => {
 
+        this.setState((prevState, props) => ({
+            designerMode: !prevState.designerMode
+        }));
+        
+        if(this.state.designerMode)
+            this.fill.style.transform = 'scaleX('+this.ratioX+') scaleY('+this.ratioY+')';
+        else {
+            this.fill.style.transform = 'scaleX(0) scaleY(0)';
+            //
+        }
     }
 
     render() {
         return (
             <div className={classes.Container} ref={container => this.container = container}>
 
-                <div className={classes.FloatingButton} onClick={this.handleChange}>
+                <div className={classes.FloatingButton} onClick={this.handleChange} ref={servicesFloatingBtn => this.servicesFloatingBtn = servicesFloatingBtn}>
                 </div>
                 
                 <div className={classes.Background} ref={fill => this.fill = fill}></div>

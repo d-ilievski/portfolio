@@ -1,19 +1,21 @@
 .Container {
     height: 100%;
     width: 100%;
-    background: pink;
+    background: white;
     overflow: hidden;
     position: relative;
 }
 
 .FloatingButton {
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 90%;
     width: 50px;
     height: 50px;
-    background: black;
     z-index: 50;
+    background: pink;
+
+    border-radius: 50%;
 }
 
 .Background {
@@ -21,9 +23,9 @@
     top: 50%;
     left: 90%;
 
-    background: rgb(137, 137, 143);
-    width: 30px;
-    height: 30px;
+    background: black;
+    width: 1px;
+    height: 1px;
 
     transition: .5s ease-in;
     transform-origin: 90% 50%;
@@ -33,4 +35,12 @@
     width: 100%;
     height: 100%;
     background: blue;
+}
+
+.FloatingButton.white {
+    background: white;
+}
+
+.FloatingButton.black {
+    background: black;
 }

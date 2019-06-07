@@ -42,6 +42,7 @@ class AboutGraph extends Component {
         if (this.props.active === 1) {
             return (
                 <div
+                    className={'wow'}
                     style={{
                     display: 'flex',
                     flexDirection: 'row'
@@ -59,37 +60,37 @@ class AboutGraph extends Component {
                             style={{
                             display: 'flex'
                         }}>
-                            <div className={[classes.GraphChartItem, 'wow', classes.Item90].join(' ')}></div>
+                            <div className={[classes.GraphChartItem, classes.Item90].join(' ')}></div>
                         </div>
                         <div
                             style={{
                             display: 'flex'
                         }}>
-                            <div className={[classes.GraphChartItem, 'wow', classes.Item80].join(' ')}></div>
+                            <div className={[classes.GraphChartItem, classes.Item80].join(' ')}></div>
                         </div>
                         <div
                             style={{
                             display: 'flex'
                         }}>
-                            <div className={[classes.GraphChartItem, 'wow', classes.Item80].join(' ')}></div>
+                            <div className={[classes.GraphChartItem, classes.Item80].join(' ')}></div>
                         </div>
                         <div
                             style={{
                             display: 'flex'
                         }}>
-                            <div className={[classes.GraphChartItem, 'wow', classes.Item60].join(' ')}></div>
+                            <div className={[classes.GraphChartItem, classes.Item60].join(' ')}></div>
                         </div>
                         <div
                             style={{
                             display: 'flex'
                         }}>
-                            <div className={[classes.GraphChartItem, 'wow', classes.Item70].join(' ')}></div>
+                            <div className={[classes.GraphChartItem, classes.Item70].join(' ')}></div>
                         </div>
                         <div
                             style={{
                             display: 'flex'
                         }}>
-                            <div className={[classes.GraphChartItem, 'wow', classes.Item80].join(' ')}></div>
+                            <div className={[classes.GraphChartItem, classes.Item80].join(' ')}></div>
                         </div>
 
                     </div>
@@ -98,9 +99,11 @@ class AboutGraph extends Component {
         } else if (this.props.active === 2) {
             return (
                 <div
+                    className={'wow'}
                     style={{
                     display: 'flex',
                     flexDirection: 'row'
+                    
                 }}>
                     <div className={classes.GraphVariables}>
                         <span className={classes.GraphVariable}>Adobe Photoshop</span>
@@ -110,42 +113,42 @@ class AboutGraph extends Component {
                         <span className={classes.GraphVariable}>Branding</span>
                         <span className={classes.GraphVariable}>UI/UX</span>
                     </div>
-                    <div className={classes.GraphChart}>
+                    <div className={`${classes.GraphChart}`}>
                         <div
                             style={{
                             display: 'flex'
                         }}>
-                            <div className={[classes.GraphChartItem, 'wow', classes.Item80].join(' ')}></div>
+                            <div className={[classes.GraphChartItem, classes.Item80].join(' ')}></div>
                         </div>
                         <div
                             style={{
                             display: 'flex'
                         }}>
-                            <div className={[classes.GraphChartItem, 'wow', classes.Item90].join(' ')}></div>
+                            <div className={[classes.GraphChartItem, classes.Item90].join(' ')}></div>
                         </div>
                         <div
                             style={{
                             display: 'flex'
                         }}>
-                            <div className={[classes.GraphChartItem, 'wow', classes.Item60].join(' ')}></div>
+                            <div className={[classes.GraphChartItem, classes.Item60].join(' ')}></div>
                         </div>
                         <div
                             style={{
                             display: 'flex'
                         }}>
-                            <div className={[classes.GraphChartItem, 'wow', classes.Item100].join(' ')}></div>
+                            <div className={[classes.GraphChartItem, classes.Item100].join(' ')}></div>
                         </div>
                         <div
                             style={{
                             display: 'flex'
                         }}>
-                            <div className={[classes.GraphChartItem, 'wow', classes.Item80].join(' ')}></div>
+                            <div className={[classes.GraphChartItem, classes.Item80].join(' ')}></div>
                         </div>
                         <div
                             style={{
                             display: 'flex'
                         }}>
-                            <div className={[classes.GraphChartItem, 'wow', classes.Item70].join(' ')}></div>
+                            <div className={[classes.GraphChartItem, classes.Item70].join(' ')}></div>
                         </div>
                     </div>
                 </div>
