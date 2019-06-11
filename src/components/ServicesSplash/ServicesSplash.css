@@ -2,8 +2,13 @@
     height: 100%;
     width: 100%;
     background: white;
-    overflow: hidden;
     position: relative;
+
+    transition-delay: .5s;
+    transition-property: background-color;
+    overflow: hidden;
+
+    scroll-snap-align: start;
 }
 
 .FloatingButton {
@@ -13,9 +18,11 @@
     width: 50px;
     height: 50px;
     z-index: 50;
-    background: pink;
 
-    border-radius: 50%;
+    mix-blend-mode: difference;
+    background: white;
+
+    transition-delay: .5s;
 }
 
 .Background {
@@ -23,12 +30,12 @@
     top: 50%;
     left: 90%;
 
-    background: black;
-    width: 1px;
-    height: 1px;
+    background: white;
+    width: 50px;
+    height: 50px;
 
-    transition: .5s ease-in;
-    transform-origin: 90% 50%;
+    transition: .3s transform ease-in;
+    transform-origin: 93% 53%;
 }
 
 .ContentContainer {
@@ -43,4 +50,10 @@
 
 .FloatingButton.black {
     background: black;
+}
+
+@keyframes backgroundToWhite {
+    0% {
+        display: none;
+    }
 }

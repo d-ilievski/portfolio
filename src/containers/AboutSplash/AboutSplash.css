@@ -3,7 +3,9 @@
     margin: 0;
     display: flex;
     box-sizing: border-box;
+    background: white;
 
+    scroll-snap-align: start;
 }
 
 .ServicesSplash {
@@ -18,10 +20,14 @@
     box-sizing: border-box;
     text-align: center;
     margin: 50px auto;
+    mix-blend-mode: difference;
+    color: white;
 }
 
 .Heading span {
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid white;
+    
+    mix-blend-mode: difference;
 }
 
 .Content {

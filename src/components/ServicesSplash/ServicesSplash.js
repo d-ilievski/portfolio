@@ -28,11 +28,23 @@ class ServicesSplash extends Component {
             designerMode: !prevState.designerMode
         }));
         
-        if(this.state.designerMode)
-            this.fill.style.transform = 'scaleX('+this.ratioX+') scaleY('+this.ratioY+')';
-        else {
+        if(this.state.designerMode) {
+
             this.fill.style.transform = 'scaleX(0) scaleY(0)';
-            //
+            //this.fill.style.background = 'white';
+
+            this.container.style.transitionDelay = '0s';
+            this.container.style.backgroundColor = 'white';
+
+        }
+        else {
+            
+            this.fill.style.transform = 'scaleX('+this.ratioX+') scaleY('+this.ratioY+')';
+            this.fill.style.background = 'black';
+
+            this.container.style.transitionDelay = '.5s';
+            this.container.style.backgroundColor = 'black';
+
         }
     }
 

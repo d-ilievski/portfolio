@@ -4,7 +4,7 @@ import WOW from 'wowjs';
 import daniel from '../../images/daniel.JPG';
 import AboutGraph from '../../components/AboutGraph/AboutGraph';
 
-class ServicesSplash extends Component {
+class AboutSplash extends Component {
 
     state = {
         activeGraph: 1
@@ -31,7 +31,7 @@ class ServicesSplash extends Component {
     render() {
 
         return (
-            <div className={classes.Container}>
+            <div className={`${classes.Container} scrollSnapChild`}>
                 <div className={classes.ServicesSplash}>
 
                     <h1 className={classes.Heading}>
@@ -64,4 +64,4 @@ class ServicesSplash extends Component {
     }
 };
 
-export default ServicesSplash;
+export default AboutSplash;

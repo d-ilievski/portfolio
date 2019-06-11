@@ -9,7 +9,7 @@ class Splash extends Component {
 
         return (
             <div
-                className={classes.Splash}
+                className={`${classes.Splash}`}
                 style={{
                 backgroundColor: this.props.boja,
             }}>

@@ -10,19 +10,41 @@ class Main extends Component {
 
     componentDidMount() {
         window.addEventListener('scroll', this.onScroll, false);
+        // window.addEventListener('wheel', this.onMousewheel, false);
+        // this.handleChoice(1);
     }
 
     componentWillUnmount() {
         window.removeEventListener('scroll', this.onScroll, false);
+        // window.removeEventListener('wheel', this.onMousewheel, false);
     }
 
     state = {
         sidebarOpen: false,
         initialState: true,
-        mainSidebarOpen: false
+        mainSidebarOpen: false,
+        activeSection: 1
     }
 
-    onScroll = () => {
+    // onMousewheel = (event) => {
+    //     if (event.wheelDelta >= 0) {
+    //         this.setState((prevState, props) => ({
+    //             activeSection: prevState.activeSection > 1 ? prevState.activeSection -1 : 1
+    //         }));
+    //     }
+    //     else {
+    //         this.setState((prevState, props) => (
+    //             {
+    //             activeSection: prevState.activeSection < 5 ? prevState.activeSection + 1 : 5
+    //         }));
+    //     }
+    //     setTimeout(() => {
+    //         this.handleChoice(this.state.activeSection);
+    //     }, 300)
+        
+    // }
+
+    onScroll = (event) => {
 
         if (window.scrollY > window.innerHeight / 2 && this.state.sidebarOpen === false) {
             this.setState({sidebarOpen: true, initialState: false, mainSidebarOpen: false});
@@ -41,15 +63,23 @@ class Main extends Component {
 
                 <Sidebar open={this.state.sidebarOpen} initialState={this.state.initialState}/>
 
-                <Splash>
-                    <OpeningSplash
-                        initial={this.state.initialState}
-                        open={this.state.mainSidebarOpen}
-                        choiceHandler={this.handleChoice}/>
-                </Splash>
+
+                <div ref={el => this["section-1"] = el}>
+
+                    <Splash>
+                        <OpeningSplash
+                            initial={this.state.initialState}
+                            open={this.state.mainSidebarOpen}
+                            choiceHandler={this.handleChoice}/>
+                    </Splash>
+
+                </div>
+                
 
                 <div ref={el => this["section-2"] = el}>
+
                     <AboutSplash/>
+
                 </div>
 
                 <div ref={el => this["section-3"] = el}>
