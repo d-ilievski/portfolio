@@ -30,11 +30,15 @@ class ServicesSplash extends Component {
         
         if(this.state.designerMode) {
 
-            this.fill.style.transform = 'scaleX(0) scaleY(0)';
-            //this.fill.style.background = 'white';
+            this.fill.style.transform = 'scaleX('+this.ratioX+') scaleY('+this.ratioY+')';
+            this.fill.style.background = 'white';
 
-            this.container.style.transitionDelay = '0s';
+            this.container.style.transitionDelay = '.5s';
             this.container.style.backgroundColor = 'white';
+            
+            setTimeout(() => {
+                this.fill.style.transform = 'scaleX(0) scaleY(0)';                
+            }, 500);
 
         }
         else {
@@ -44,6 +48,11 @@ class ServicesSplash extends Component {
 
             this.container.style.transitionDelay = '.5s';
             this.container.style.backgroundColor = 'black';
+            
+            setTimeout(() => {
+                this.fill.style.transform = 'scaleX(0) scaleY(0)';                
+            }, 500);
+            
 
         }
     }

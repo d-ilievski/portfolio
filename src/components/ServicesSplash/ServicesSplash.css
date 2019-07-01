@@ -17,12 +17,15 @@
     left: 90%;
     width: 50px;
     height: 50px;
-    z-index: 50;
+    z-index: 100;
 
     mix-blend-mode: difference;
     background: white;
 
     transition-delay: .5s;
+
+    animation: pulse 1s infinite;
+    cursor: pointer;
 }
 
 .Background {
@@ -33,9 +36,11 @@
     background: white;
     width: 50px;
     height: 50px;
+    
+    transform: scaleX(0) scaleY(0);
 
     transition: .3s transform ease-in;
-    transform-origin: 93% 53%;
+    transform-origin: 90% 50%
 }
 
 .ContentContainer {
@@ -44,16 +49,14 @@
     background: blue;
 }
 
-.FloatingButton.white {
-    background: white;
-}
 
-.FloatingButton.black {
-    background: black;
-}
 
-@keyframes backgroundToWhite {
-    0% {
-        display: none;
-    }
+@keyframes pulse
+{
+     0% {
+          box-shadow: inset 0 0 0 30px rgba(0, 0, 0, 0.2);
+     }
+     100% {
+          box-shadow: inset 0 0 0 0px rgba(0, 0, 0, 0);
+     }
 }
