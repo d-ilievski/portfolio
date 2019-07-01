@@ -11,6 +11,17 @@
     animation-timing-function: ease-in-out;
 
     white-space: nowrap;
+
+    transition: all .2s ease-in-out;
+}
+
+.Logo:hover {
+  cursor: default;
+  transform: scale(1.1);
+
+  /* background: black;
+  mix-blend-mode: difference;
+  color: white; */
 }
 
 .Name {

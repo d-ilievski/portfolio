@@ -22,6 +22,7 @@
     display: flex;
 
     scroll-snap-align: start;
+    background: white;
 }
 
 .BlackBackgroundClose {

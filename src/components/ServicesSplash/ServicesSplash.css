@@ -9,11 +9,12 @@
     overflow: hidden;
 
     scroll-snap-align: start;
+
 }
 
 .FloatingButton {
     position: absolute;
-    top: 50%;
+    top: 80%;
     left: 90%;
     width: 50px;
     height: 50px;
@@ -30,33 +31,90 @@
 
 .Background {
     position: absolute;
-    top: 50%;
+    top: 80%;
     left: 90%;
 
     background: white;
     width: 50px;
     height: 50px;
-    
+
     transform: scaleX(0) scaleY(0);
 
-    transition: .3s transform ease-in;
-    transform-origin: 90% 50%
+    transition: .25s transform ease-in;
+    transform-origin: 90% 80%
 }
 
-.ContentContainer {
-    width: 100%;
-    height: 100%;
-    background: blue;
+.ContentWrapper {
+    margin: auto;
+    width: 1024px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
+.ContentWrapper .ContentItem {
+    border: 5px solid white;
+    mix-blend-mode: difference;
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+    transition: all .2s ease-in;
+    position: relative;
+    overflow: hidden;
 
+    box-sizing: border-box;
+}
 
-@keyframes pulse
-{
-     0% {
-          box-shadow: inset 0 0 0 30px rgba(0, 0, 0, 0.2);
-     }
-     100% {
-          box-shadow: inset 0 0 0 0px rgba(0, 0, 0, 0);
-     }
+.ContentWrapper .ContentItem:hover {
+    height: 350px;
+    background: white;
+}
+
+.ContentWrapper .ContentItem .Icon {
+    color: white;
+    mix-blend-mode: difference;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+}
+
+.ContentWrapper .ContentItem .Icon:hover {
+    transform: scale(1.6);
+}
+
+.ContentWrapper .ContentItem .Description h3 {
+    margin: 0;
+    text-align: center;
+}
+
+.ContentWrapper .ContentItem .Description {
+    padding: 0 10px;
+}
+
+.ContentWrapper .ContentItem .Description p,
+.ContentWrapper .ContentItem .Description strong {
+    font-size: .8em;
+}
+
+.Link {
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.Link:hover {
+    font-size: 1em;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: inset 0 0 0 30px rgba(0, 0, 0, 0.2);
+    }
+
+    100% {
+        box-shadow: inset 0 0 0 0px rgba(0, 0, 0, 0);
+    }
 }

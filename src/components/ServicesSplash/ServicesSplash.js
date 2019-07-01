@@ -2,10 +2,14 @@ import React, {Component} from 'react';
 import aboutClasses from '../../containers/AboutSplash/AboutSplash.css';
 import classes from './ServicesSplash.css';
 
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faUser, faRocket, faPeopleCarry} from '@fortawesome/free-solid-svg-icons'
+
 class ServicesSplash extends Component {
 
     state = {
-        designerMode : false
+        designerMode : false,
+        designerModeDelayed : false
     }
 
     componentDidMount() {
@@ -27,6 +31,12 @@ class ServicesSplash extends Component {
         this.setState((prevState, props) => ({
             designerMode: !prevState.designerMode
         }));
+
+        setTimeout(() => {
+            this.setState((prevState, props) => ({
+                designerModeDelayed: !prevState.designerModeDelayed
+            }));
+        }, 200);
         
         if(this.state.designerMode) {
 
@@ -69,6 +79,45 @@ class ServicesSplash extends Component {
                 <h1 className={aboutClasses.Heading}>
                     <span>SERVICES</span>
                 </h1>
+
+                <div className={classes.ContentWrapper}>
+                    <div className={classes.ContentItem}>
+                        <div className={classes.Icon}>
+                            <FontAwesomeIcon icon={this.state.designerModeDelayed ? faUser : faRocket} size="2x"></FontAwesomeIcon>
+                        </div>
+                        <div className={classes.Description}>
+                            <h3>Rockstar Webapps</h3>
+
+                            <p>The easier your website is to use, the more people use it. An essential part of “easy to use” is intuitiveness...</p>
+                            <strong className={classes.Link}>Read More</strong>
+                        </div>
+                    </div>
+                    <div className={classes.ContentItem}>
+                        <div className={classes.Icon}>
+                            <FontAwesomeIcon icon={this.state.designerModeDelayed ? faUser : faPeopleCarry} size="2x"></FontAwesomeIcon>
+                        </div>
+                        <div className={classes.Description}>
+                            <h3>Rockstar Webapps</h3>
+
+                            <p>Bridge communication gap between designers and developers...</p>
+                            <strong className={classes.Link}>Read More</strong>
+                        </div>
+                    </div>
+                    <div className={classes.ContentItem}>
+                        <div className={classes.Icon}>
+                            <FontAwesomeIcon icon={this.state.designerModeDelayed ? faUser : faRocket} size="2x"></FontAwesomeIcon>
+                        </div>
+                        <div className={classes.Description}>
+                            <h3>Rockstar Webapps</h3>
+
+                            <p>
+                                
+                            </p>
+                            <strong className={classes.Link}>Read More</strong>
+                        </div>
+                    </div>
+                    
+                </div>
 
             </div>
         );
