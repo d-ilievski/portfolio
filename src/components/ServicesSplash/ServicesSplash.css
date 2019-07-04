@@ -82,6 +82,11 @@
     transition: all .2s ease-in-out;
 }
 
+.ContentWrapper .ContentItem .Icon svg {
+    color: white;
+    mix-blend-mode: difference;
+}
+
 .ContentWrapper .ContentItem .Icon:hover {
     transform: scale(1.6);
 }

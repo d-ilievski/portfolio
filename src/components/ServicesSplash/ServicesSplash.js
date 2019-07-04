@@ -3,7 +3,8 @@ import aboutClasses from '../../containers/AboutSplash/AboutSplash.css';
 import classes from './ServicesSplash.css';
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faUser, faRocket, faPeopleCarry} from '@fortawesome/free-solid-svg-icons'
+import {faUser, faRocket, faTachometerAlt} from '@fortawesome/free-solid-svg-icons/'
+import {ReactComponent as ResponsivenessLogo} from '../../images/icons/responsiveness.svg';
 
 class ServicesSplash extends Component {
 
@@ -83,21 +84,22 @@ class ServicesSplash extends Component {
                 <div className={classes.ContentWrapper}>
                     <div className={classes.ContentItem}>
                         <div className={classes.Icon}>
-                            <FontAwesomeIcon icon={this.state.designerModeDelayed ? faUser : faRocket} size="2x"></FontAwesomeIcon>
+                            <FontAwesomeIcon icon={this.state.designerModeDelayed ? faUser : faTachometerAlt} size="2x"></FontAwesomeIcon>
                         </div>
                         <div className={classes.Description}>
-                            <h3>Rockstar Webapps</h3>
+                            <h3>High Performance</h3>
 
-                            <p>The easier your website is to use, the more people use it. An essential part of “easy to use” is intuitiveness...</p>
+                            <p>Having a fast website is key to keeping people around which ultimately converts them into customers.</p>
                             <strong className={classes.Link}>Read More</strong>
                         </div>
                     </div>
                     <div className={classes.ContentItem}>
                         <div className={classes.Icon}>
-                            <FontAwesomeIcon icon={this.state.designerModeDelayed ? faUser : faPeopleCarry} size="2x"></FontAwesomeIcon>
+                            {/* <FontAwesomeIcon icon={this.state.designerModeDelayed ? faUser : } size="2x"></FontAwesomeIcon> */}
+                            <ResponsivenessLogo/>
                         </div>
                         <div className={classes.Description}>
-                            <h3>Rockstar Webapps</h3>
+                            <h3>Responsive</h3>
 
                             <p>Bridge communication gap between designers and developers...</p>
                             <strong className={classes.Link}>Read More</strong>

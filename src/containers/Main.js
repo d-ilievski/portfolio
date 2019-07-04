@@ -5,6 +5,7 @@ import OpeningSplash from '../components/OpeningSplash/OpeningSplash';
 import AboutSplash from './AboutSplash/AboutSplash';
 import Sidebar from '../components/Sidebar/Sidebar';
 import ServicesSplash from '../components/ServicesSplash/ServicesSplash';
+import ProjectsSplash from '../components/ProjectsSplash/ProjectsSplash'
 
 class Main extends Component {
 
@@ -89,7 +90,7 @@ class Main extends Component {
                 </div>
 
                 <div ref={el => this["section-4"] = el}>
-                    <Splash boja="white"/>
+                    <ProjectsSplash/>
                 </div>
 
                 <div ref={el => this["section-5"] = el}>

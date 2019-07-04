@@ -1,0 +1,11 @@
+.Container {
+    width: 100%;
+    background: white;
+    position: relative;
+
+    transition-delay: .5s;
+    transition-property: background-color;
+    overflow: hidden;
+
+    scroll-snap-align: start;
+}
