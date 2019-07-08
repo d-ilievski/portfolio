@@ -9,3 +9,17 @@
 
     scroll-snap-align: start;
 }
+
+.TilesContainer {
+    width: 1024px;
+    margin: auto;
+}
+
+.TilesRow {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
