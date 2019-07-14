@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/oblecime-bg.78beb417.jpg"
   },
   {
-    "revision": "5b1602ebb4c18d0fda57efca381965db",
-    "url": "/portfolio/static/media/menusano-bg.5b1602eb.jpg"
+    "revision": "c19b20e95eef9a059cedfb40cb3911b5",
+    "url": "/portfolio/static/media/menusano-bg.c19b20e9.jpg"
   },
   {
     "revision": "ede67e3d0cb564dccbd929cdb5f2f032",
@@ -24,19 +24,19 @@ self.__precacheManifest = [
     "url": "/portfolio/static/js/runtime~main.ee2a1003.js"
   },
   {
-    "revision": "1e3312305082c830135b",
-    "url": "/portfolio/static/js/main.1e331230.chunk.js"
+    "revision": "a3c3c528f692fca8c70c",
+    "url": "/portfolio/static/js/main.a3c3c528.chunk.js"
   },
   {
     "revision": "ae6b479c017677e14f23",
     "url": "/portfolio/static/js/1.ae6b479c.chunk.js"
   },
   {
-    "revision": "1e3312305082c830135b",
-    "url": "/portfolio/static/css/main.4b22e75c.chunk.css"
+    "revision": "a3c3c528f692fca8c70c",
+    "url": "/portfolio/static/css/main.9abd33dc.chunk.css"
   },
   {
-    "revision": "1f1fa5970d6c52a1c607728afd8c763a",
+    "revision": "91aa3cf00c228fb1897d07853178e2f6",
     "url": "/portfolio/index.html"
   }
 ];
