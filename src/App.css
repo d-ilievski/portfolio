@@ -5,3 +5,11 @@
 
   scroll-snap-type: y mandatory;
 }
+
+.title-mask {
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  top: 110px;
+  background: white 
+}
