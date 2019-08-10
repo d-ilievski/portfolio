@@ -36,7 +36,7 @@ a {
     -moz-filter:    grayscale(0%);
     -ms-filter:     grayscale(0%);
     -o-filter:      grayscale(0%);
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .Tile .Description {

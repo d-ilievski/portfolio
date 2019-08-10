@@ -5,7 +5,8 @@ import OpeningSplash from '../components/OpeningSplash/OpeningSplash';
 import AboutSplash from './AboutSplash/AboutSplash';
 import Sidebar from '../components/Sidebar/Sidebar';
 import ServicesSplash from '../components/ServicesSplash/ServicesSplash';
-import ProjectsSplash from '../components/ProjectsSplash/ProjectsSplash'
+import ProjectsSplash from '../components/ProjectsSplash/ProjectsSplash';
+import ContactSplash from '../components/ContactSplash/ContactSplash';
 
 class Main extends Component {
 
@@ -94,7 +95,9 @@ class Main extends Component {
                 </div>
 
                 <div ref={el => this["section-5"] = el}>
-                    <Splash boja="white"/>
+                    <Splash>
+                        <ContactSplash />
+                        </Splash>
                 </div>
 
             </Auxilliary>

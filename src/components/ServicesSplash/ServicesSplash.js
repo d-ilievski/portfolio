@@ -87,12 +87,12 @@ class ServicesSplash extends Component {
 
                 <div className={classes.Background} ref={fill => this.fill = fill}></div>
 
-                <h1 className={aboutClasses.Heading}>
+                <h1 className={aboutClasses.Heading + ' wow ' + aboutClasses.Appear} data-wow-delay="0.2s">
                     <span>SERVICES</span>
                 </h1>
 
                 <div className={classes.ContentWrapper}>
-                    <div className={classes.ContentItem}>
+                    <div className={classes.ContentItem + ' wow ' + aboutClasses.Appear} data-wow-delay="0.4s">
                         <div className={classes.Icon}>
                             <FontAwesomeIcon
                                 icon={this.state.designerModeDelayed
@@ -108,7 +108,7 @@ class ServicesSplash extends Component {
                             <strong className={classes.Link}>Read More</strong>
                         </div>
                     </div>
-                    <div className={classes.ContentItem}>
+                    <div className={classes.ContentItem + ' wow ' + aboutClasses.Appear} data-wow-delay="0.6s">
                         <div className={classes.Icon}>
                             {/* <FontAwesomeIcon icon={this.state.designerModeDelayed ? faUser : } size="2x"></FontAwesomeIcon> */}
                             <ResponsivenessLogo/>
@@ -120,7 +120,7 @@ class ServicesSplash extends Component {
                             <strong className={classes.Link}>Read More</strong>
                         </div>
                     </div>
-                    <div className={classes.ContentItem}>
+                    <div className={classes.ContentItem + ' wow ' + aboutClasses.Appear} data-wow-delay="0.8s">
                         <div className={classes.Icon}>
                             <FontAwesomeIcon
                                 icon={this.state.designerModeDelayed

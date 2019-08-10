@@ -21,6 +21,7 @@
     flex-flow: row;
     justify-content: space-around;
     margin-bottom: 30px;
+    visibility: hidden;
 }
 
 .Appear {
@@ -31,16 +32,17 @@
     animation-fill-mode: forwards;
     animation-delay: .5s;
     transform-origin: 50% 50%;
+    visibility: hidden;
 }
 
 @keyframes appear {
     0% {
         opacity: 0;
-        transform: scaleX(4);
+        transform: translateY(100px);
     }
 
     100% {
         opacity: 1;
-        transform: scaleX(1);
+        transform: translateY(0);
     }
 }

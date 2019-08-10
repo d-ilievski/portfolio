@@ -38,33 +38,34 @@ class Tile extends Component {
     render() {
 
         return (
-            <a href={this.props.link} target="_blank" rel="noopener noreferrer">
-            <div
-                className={`${classes.Tile} ${this.props.shrinked && classes.Shrink}`}
-                onMouseEnter={this.tileMouseEnterHook}
-                onMouseLeave={this.tileMouseLeaveHook}>
-                
+            
+                <div
+                    className={`${classes.Tile} ${this.props.shrinked && classes.Shrink}`}
+                    onMouseEnter={this.tileMouseEnterHook}
+                    onMouseLeave={this.tileMouseLeaveHook}>
+
                     <img
                         className={classes.Logo}
                         src={this.props.logo}
                         alt="logo"
                         ref={logo => this.logo = logo}/>
-                
-                <div
-                    className={classes.Description}
-                    ref={description => this.description = description}>
-                    {this.props.description}
-                    {this.props.linkText && <p>
-                        <b><a href={this.props.link} target="_blank" rel="noopener noreferrer">{this.props.linkText}</a></b>
-                    </p>}
+
+                    <div
+                        className={classes.Description}
+                        ref={description => this.description = description}>
+                        {this.props.description}
+                        {this.props.linkText && <p>
+                            <b>
+                                <a href={this.props.link} target="_blank" rel="noopener noreferrer">{this.props.linkText}</a>
+                            </b>
+                        </p>}
+                    </div>
+                    <img
+                        className={classes.Background}
+                        src={this.props.background}
+                        ref={background => this.background = background}
+                        alt="menusanoBg"/>
                 </div>
-                <img
-                    className={classes.Background}
-                    src={this.props.background}
-                    ref={background => this.background = background}
-                    alt="menusanoBg"/>
-            </div>
-            </a>
         );
     }
 }

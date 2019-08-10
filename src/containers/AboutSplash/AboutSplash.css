@@ -25,8 +25,8 @@
 }
 
 .Heading span {
-    border-bottom: 3px solid white;
     
+    border-bottom: 3px solid white;
     mix-blend-mode: difference;
 }
 
@@ -43,4 +43,26 @@
 
 .NameCard {
     border-width: 3px; border-style: solid; border-color: #000000; max-width: 230px; max-height: fit-content; padding: 20px 20px;
+}
+
+.Appear {
+    opacity: 0;
+    animation-name: appear;
+    animation-duration: .5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    transform-origin: 50% 50%;
+    visibility: hidden;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

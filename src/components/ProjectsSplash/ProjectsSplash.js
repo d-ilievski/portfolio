@@ -27,19 +27,19 @@ class ProjectsSplash extends Component {
         return (
             <div className={classes.Container}>
 
-                <h1 className={aboutClasses.Heading + ' wow slideInUp'} data-wow-delay="1s" style={{visibility: 'hidden'}}>
+                <h1 className={aboutClasses.Heading + ' wow ' + aboutClasses.Appear} data-wow-delay="0s" style={{visibility: 'hidden'}}>
                     <span>PROJECTS</span>
                 </h1>
                 <div className={'title-mask'}></div>
 
-                <div className={classes.TilesContainer + ' wow ' + classes.Appear}>
-                    <div className={classes.TilesRow}>
+                <div className={classes.TilesContainer}>
+                    <div className={classes.TilesRow + ' wow ' + classes.Appear} data-wow-delay="1s">
                         <Tile link="http://app.menusano.com" linkText="Visit Website" logo={menusano} background={menusanoBg} description="An easy-to-use nutrition analysis software for the Foodservice Industry" />
                         <Tile link="https://github.com/d-ilievski/obleci.me-frontend/blob/master/131176_sistem_za_pomos_na_bezdomnici.docx?raw=true" linkText="Download thesis (MK)" logo={oblecime} background={oblecimeBg} description="A charity service for helping homeless people and people in need." />
                         <Tile link="https://www.trackado.com/" linkText="Visit Website" logo={trackado} background={trackadoBg} description="An easy-to-use nutrition analysis software for the Foodservice Industry" />
                         <Tile logo={menusano} background={menusanoBg} description="An easy-to-use nutrition analysis software for the Foodservice Industry" />
                     </div>
-                    <div className={classes.TilesRow}>
+                    <div className={classes.TilesRow + ' wow ' + classes.Appear} data-wow-delay="2s">
                         <Tile link="http://app.menusano.com" linkText="Visit Website" logo={menusano} background={menusanoBg} description="An easy-to-use nutrition analysis software for the Foodservice Industry" />
                         <Tile link="https://github.com/d-ilievski/obleci.me-frontend/blob/master/131176_sistem_za_pomos_na_bezdomnici.docx?raw=true" linkText="Download thesis (MK)" logo={oblecime} background={oblecimeBg} description="A charity service for helping homeless people and people in need." />
                         <Tile link="https://www.trackado.com/" linkText="Visit Website" logo={trackado} background={trackadoBg} description="An easy-to-use nutrition analysis software for the Foodservice Industry" />
