@@ -28,23 +28,13 @@ class Main extends Component {
         activeSection: 1
     }
 
-    // onMousewheel = (event) => {
-    //     if (event.wheelDelta >= 0) {
-    //         this.setState((prevState, props) => ({
-    //             activeSection: prevState.activeSection > 1 ? prevState.activeSection -1 : 1
-    //         }));
-    //     }
-    //     else {
-    //         this.setState((prevState, props) => (
-    //             {
-    //             activeSection: prevState.activeSection < 5 ? prevState.activeSection + 1 : 5
-    //         }));
-    //     }
-    //     setTimeout(() => {
-    //         this.handleChoice(this.state.activeSection);
-    //     }, 300)
-        
-    // }
+    // onMousewheel = (event) => {     if (event.wheelDelta >= 0) {
+    // this.setState((prevState, props) => ({             activeSection:
+    // prevState.activeSection > 1 ? prevState.activeSection -1 : 1         }));
+    // }     else {         this.setState((prevState, props) => (             {
+    //        activeSection: prevState.activeSection < 5 ? prevState.activeSection
+    // + 1 : 5         }));     }     setTimeout(() => {
+    // this.handleChoice(this.state.activeSection);     }, 300) }
 
     onScroll = (event) => {
 
@@ -65,7 +55,6 @@ class Main extends Component {
 
                 <Sidebar open={this.state.sidebarOpen} initialState={this.state.initialState}/>
 
-
                 <div ref={el => this["section-1"] = el}>
 
                     <Splash>
@@ -76,7 +65,6 @@ class Main extends Component {
                     </Splash>
 
                 </div>
-                
 
                 <div ref={el => this["section-2"] = el}>
 
@@ -95,9 +83,7 @@ class Main extends Component {
                 </div>
 
                 <div ref={el => this["section-5"] = el}>
-                    <Splash>
-                        <ContactSplash />
-                        </Splash>
+                    <ContactSplash/>
                 </div>
 
             </Auxilliary>

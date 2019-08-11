@@ -7,6 +7,7 @@
     background: white;
 
     scroll-snap-align: start;
+    position: relative;
 }
 
 .Content {
@@ -76,4 +77,28 @@
 .SubmitBtn:hover {
     cursor: pointer;
     transform: scale(1.2);
+}
+
+.Astro {
+    position: absolute;
+    bottom: 23px;
+    left: calc(50% - 50px);
+    height: 100px;
+
+    animation: astroFloat 5s ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes astroFloat {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }

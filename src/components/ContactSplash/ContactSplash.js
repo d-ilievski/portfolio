@@ -2,12 +2,16 @@ import React, {Component} from 'react';
 import aboutClasses from '../../containers/AboutSplash/AboutSplash.css';
 import classes from './ContactSplash.css';
 
+import astro from '../../images/astro.svg';
+
 import WOW from 'wowjs';
 
 class ContactSplash extends Component {
 
     state = {
-        condition: true
+        name: false,
+        email: false,
+        body: false
     }
 
     componentDidMount() {
@@ -43,24 +47,41 @@ class ContactSplash extends Component {
                                 placeholder="Your Name"
                                 className={classes.Input}
                                 type="text"
-                                name="name"/>
+                                name="name"
+                                required/>
                             <input
                                 placeholder="Your Email"
                                 className={classes.Input}
                                 type="email"
-                                name="_replyto"/>
+                                name="_replyto"
+                                required/>
                             <textarea
                                 placeholder="What's on your mind?"
                                 className={classes.TextArea}
                                 type="text"
-                                name="_body"/>
+                                name="_body"
+                                required/>
                             <input className={classes.SubmitBtn} type="submit" value="Send"/>
                         </form>
                     </div>
                 </div>
 
-                <div style={{fontFamily: "'Courier New', monospace", textAlign: 'center', marginTop: "50px"}}>
-                    Made with <span style={{color: "#e25555"}}>&#9829;</span> in outer space.
+                <div className={' wow ' + aboutClasses.Appear}>
+                    <img src={astro} alt="astro" className={classes.Astro}/>
+
+                    <div
+                        style={{
+                        fontFamily: "'Courier New', monospace",
+                        textAlign: 'center',
+                        marginTop: "150px"
+                    }}>
+                        Crafted with&nbsp;
+                        <span
+                            style={{
+                            color: "#e25555",
+                            fontSize: "1.4em"
+                        }}>&#9829;</span>&nbsp;in outer space.
+                    </div>
                 </div>
             </div>
         )
