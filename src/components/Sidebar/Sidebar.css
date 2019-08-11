@@ -1,9 +1,16 @@
 .SidebarContainer {
-    width: 100px;
+    width: 60px;
     height: 100vh;
     position: fixed;
     background: transparent;
     z-index: 1000;
+    overflow: hidden;
+
+    transition: all .2s ease-in;
+}
+
+.SidebarContainer:hover {
+    width: 200px;
 }
 
 .Sidebar {
@@ -11,7 +18,7 @@
     height: 100%;
     background: black;
     position: relative;
-    left: -100px;
+    left: -60px;
 
     transition-property: left;
     transition-duration: 1s;
@@ -19,6 +26,15 @@
     animation-fill-mode: forwards;
     animation-duration: 300ms;
     animation-timing-function: ease-in-out;
+}
+
+.Mask {
+    width: 20px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background: black;
+    z-index: 100;
 }
 
 .SidebarOpen {
@@ -39,20 +55,23 @@
     height: 100%;
     margin: 0;
     padding: 0;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .Menu li {
-    width: 40px;
-    height: 40px;
+    margin-left: 22px;
     align-items: center;
     justify-content: center;
     display: flex;
     transform: scale(1);
+    font-size: 1.4em;
+    letter-spacing: 5px;
+    border-bottom: 3px solid transparent;
 }
 
 .Menu li:hover {
-    transform: scale(1.2);
+    cursor: pointer;
+    border-bottom: 3px solid white;
 }
 
 @keyframes open {

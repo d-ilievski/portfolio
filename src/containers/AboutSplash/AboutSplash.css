@@ -1,6 +1,7 @@
 .Container {
     width: 100%;
     margin: 0;
+    margin-bottom: 50px;
     display: flex;
     box-sizing: border-box;
     background: white;
@@ -20,6 +21,7 @@
     box-sizing: border-box;
     text-align: center;
     margin: 50px auto;
+    margin-top: 0;
     mix-blend-mode: difference;
     color: white;
 }

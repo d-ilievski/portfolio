@@ -53,7 +53,7 @@ class Main extends Component {
         return (
             <Auxilliary>
 
-                <Sidebar open={this.state.sidebarOpen} initialState={this.state.initialState}/>
+                <Sidebar choiceHandler={this.handleChoice} open={this.state.sidebarOpen} initialState={this.state.initialState}/>
 
                 <div ref={el => this["section-1"] = el}>
 

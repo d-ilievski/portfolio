@@ -40,9 +40,10 @@ class Tile extends Component {
         return (
             
                 <div
-                    className={`${classes.Tile} ${this.props.shrinked && classes.Shrink}`}
+                    className={`${classes.Tile} ${this.props.animation}`}
                     onMouseEnter={this.tileMouseEnterHook}
-                    onMouseLeave={this.tileMouseLeaveHook}>
+                    onMouseLeave={this.tileMouseLeaveHook}
+                    data-wow-delay={this.props.delay}>
 
                     <img
                         className={classes.Logo}

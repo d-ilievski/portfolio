@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import aboutClasses from '../../containers/AboutSplash/AboutSplash.css';
 import classes from './ContactSplash.css';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faPaperPlane} from '@fortawesome/free-regular-svg-icons';
 
 import astro from '../../images/astro.svg';
 
@@ -35,6 +37,16 @@ class ContactSplash extends Component {
                 </h1>
 
                 <div className={classes.Content}>
+                    <div className={classes.panelLeft}>
+                        <p>
+                            You can find me on instagra
+                        </p>
+                        <ul>
+                            <li>
+                                
+                            </li>
+                        </ul>
+                    </div>
                     <div className={classes.FormContainer}>
                         <form
                             className={classes.Form + ' wow ' + aboutClasses.Appear}
@@ -61,7 +73,9 @@ class ContactSplash extends Component {
                                 type="text"
                                 name="_body"
                                 required/>
-                            <input className={classes.SubmitBtn} type="submit" value="Send"/>
+                            <button className={classes.SubmitBtn} type="submit">
+                                <FontAwesomeIcon icon={faPaperPlane}/>&nbsp;Send
+                            </button>
                         </form>
                     </div>
                 </div>

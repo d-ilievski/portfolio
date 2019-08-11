@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import classes from './Sidebar.css';
 import WOW from 'wowjs';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faUserCog, faAddressCard} from '@fortawesome/free-solid-svg-icons'
 
 class Sidebar extends Component {
 
@@ -24,15 +22,21 @@ class Sidebar extends Component {
         return (
             <div className={classes.SidebarContainer}>
                 <div className={wowClasses.join(' ')}>
+                    <div className={classes.Mask}></div>
                     <ul className={classes.Menu}>
-                        <li>
-                            <FontAwesomeIcon icon={faUserCog} size='2x'></FontAwesomeIcon>
+                        <li onClick={() => this.props.choiceHandler(2)}>
+                            ABOUT
                         </li>
-                        <li>
-                            <FontAwesomeIcon icon={faAddressCard} size='2x'></FontAwesomeIcon>
+
+                        <li onClick={() => this.props.choiceHandler(3)}>
+                            SERVICES
                         </li>
-                        <li></li>
-                        <li></li>
+                        <li onClick={() => this.props.choiceHandler(4)}>
+                            PROJECTS
+                        </li>
+                        <li onClick={() => this.props.choiceHandler(5)}>
+                            CONTACT
+                        </li>
                     </ul>
                 </div>
             </div>

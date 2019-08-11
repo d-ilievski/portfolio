@@ -12,13 +12,16 @@
 
 .Content {
     display: flex;
-    justify-content: space-around;
-    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.PanelLeft {
+    width: 30%;
 }
 
 .FormContainer {
     display: block;
-    width: 250px;
+    width: 30%;
 }
 
 .Form {
@@ -70,8 +73,13 @@
     width: 100%;
     font-size: 1.3em;
     font-weight: bold;
+    outline: none;
     
     transition: all .2s ease-out;
+}
+
+.SubmitBtn svg {
+    margin: 0;
 }
 
 .SubmitBtn:hover {
@@ -81,9 +89,9 @@
 
 .Astro {
     position: absolute;
-    bottom: 23px;
-    left: calc(50% - 50px);
-    height: 100px;
+    bottom: 20px;
+    left: calc(50% + 45px);
+    height: 80px;
 
     animation: astroFloat 5s ease;
     animation-iteration-count: infinite;

@@ -4,7 +4,7 @@ import classes from './ServicesSplash.css';
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faUser, faRocket, faTachometerAlt} from '@fortawesome/free-solid-svg-icons/'
-import {ReactComponent as ResponsivenessLogo} from '../../images/icons/responsiveness.svg';
+// import {ReactComponent as ResponsivenessLogo} from '../../images/icons/responsiveness.svg';
 
 class ServicesSplash extends Component {
 
@@ -110,8 +110,8 @@ class ServicesSplash extends Component {
                     </div>
                     <div className={classes.ContentItem + ' wow ' + aboutClasses.Appear} data-wow-delay="0.6s">
                         <div className={classes.Icon}>
-                            {/* <FontAwesomeIcon icon={this.state.designerModeDelayed ? faUser : } size="2x"></FontAwesomeIcon> */}
-                            <ResponsivenessLogo/>
+                            <FontAwesomeIcon icon={this.state.designerModeDelayed ? faUser : faUser} size="2x"></FontAwesomeIcon>
+                            {/* <ResponsivenessLogo/> */}
                         </div>
                         <div className={classes.Description}>
                             <h3>Responsive</h3>

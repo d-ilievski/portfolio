@@ -1,13 +1,13 @@
 .Container {
     width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 30px;
+    padding-left: 100px;
+    box-sizing: border-box;
     background: white;
-    position: relative;
-
-    transition-delay: .5s;
-    transition-property: background-color;
-    overflow: hidden;
-
     scroll-snap-align: start;
+    position: relative;
 }
 
 .TilesContainer {
@@ -21,7 +21,6 @@
     flex-flow: row;
     justify-content: space-around;
     margin-bottom: 30px;
-    visibility: hidden;
 }
 
 .Appear {
