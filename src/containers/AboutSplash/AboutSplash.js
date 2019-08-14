@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import classes from './AboutSplash.css';
-import WOW from 'wowjs';
 import daniel from '../../images/daniel.JPG';
 import AboutGraph from '../../components/AboutGraph/AboutGraph';
 
@@ -10,11 +9,6 @@ class AboutSplash extends Component {
         activeGraph: 1
     }
 
-    componentDidMount() {
-        new WOW
-            .WOW()
-            .init();
-    }
 
     handleSidebarHover = () => {
         this.setState(prevState => {

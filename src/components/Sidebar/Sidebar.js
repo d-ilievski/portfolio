@@ -1,14 +1,8 @@
 import React, {Component} from 'react';
 import classes from './Sidebar.css';
-import WOW from 'wowjs';
 
 class Sidebar extends Component {
 
-    componentDidMount() {
-        new WOW
-            .WOW()
-            .init();
-    }
 
     render() {
 

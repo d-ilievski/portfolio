@@ -9,7 +9,7 @@ import oblecime from '../../images/oblecime.png';
 import oblecimeBg from '../../images/oblecime-bg.jpg';
 import trackado from '../../images/trackado.png';
 import trackadoBg from '../../images/trackadoBg.png';
-import WOW from 'wowjs';
+
 
 class ProjectsSplash extends Component {
 
@@ -17,11 +17,7 @@ class ProjectsSplash extends Component {
         condition: true,
     }
 
-    componentDidMount() {
-        new WOW
-            .WOW()
-            .init();
-    }
+
 
     render() {
         return (

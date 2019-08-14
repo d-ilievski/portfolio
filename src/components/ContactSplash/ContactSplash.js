@@ -6,7 +6,7 @@ import {faPaperPlane} from '@fortawesome/free-regular-svg-icons';
 
 import astro from '../../images/astro.svg';
 
-import WOW from 'wowjs';
+
 
 class ContactSplash extends Component {
 
@@ -16,11 +16,7 @@ class ContactSplash extends Component {
         body: false
     }
 
-    componentDidMount() {
-        new WOW
-            .WOW()
-            .init();
-    }
+
 
     onSubmitForm = () => {
         window.open('about:blank', 'contact_me', 'width=800,height=600');

@@ -1,14 +1,10 @@
 import React, {Component} from 'react';
 import classes from './AboutGraph.css';
-import WOW from 'wowjs';
+
 
 class AboutGraph extends Component {
 
-    componentDidMount() {
-        new WOW
-            .WOW()
-            .init();
-    }
+
 
     generateGraphOptions = () => {
         return (

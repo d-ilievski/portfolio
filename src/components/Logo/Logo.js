@@ -1,13 +1,11 @@
 import React, {Component} from 'react';
 import classes from './Logo.css';
 import Auxilliary from '../../hoc/Auxilliary';
-import WOW from 'wowjs';
+
 
 class Logo extends Component {
 
-    componentDidMount() {
-        new WOW.WOW().init();
-    }
+
     
 
     render() {
