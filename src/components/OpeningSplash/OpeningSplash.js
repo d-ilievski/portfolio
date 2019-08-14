@@ -13,7 +13,7 @@ class OpeningSplash extends Component {
 
     render() {
 
-        const wowClasses = [classes.BlackBackground];
+        const wowClasses = [classes.BlackBackground, classes.NavigationContainer];
         if (this.props.initial) {
             wowClasses.push(classes.BlackBackgroundInitialOpen);
         } else {
