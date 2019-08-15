@@ -20,7 +20,7 @@ class Logo extends Component {
                         Daniel Ilievski
                     </div>
                     <div className={classes.Title}>
-                        Web Developer and Graphic Designer
+                        Web Developer and Designer
                     </div>
                 </div>
                 {/*<div className={hiClasses.join(" ")} data-wow-duration="1s" data-wow-delay="3s">Hi!</div>*/}

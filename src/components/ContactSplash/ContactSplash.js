@@ -33,15 +33,14 @@ class ContactSplash extends Component {
                 </h1>
 
                 <div className={classes.Content}>
-                    <div className={classes.panelLeft}>
+                    <div className={classes.PanelLeft}>
                         <p>
-                            You can find me on instagra
+                            If you would like to build something great or just say hi, <span className={classes.HoverUnderline}>fill out the form</span> on the right. 
                         </p>
-                        <ul>
-                            <li>
-                                
-                            </li>
-                        </ul>
+                        
+                        <p>
+                            If you would like to build something great or just say hi, fill out the form on the right. 
+                        </p>
                     </div>
                     <div className={classes.FormContainer}>
                         <form
@@ -50,13 +49,15 @@ class ContactSplash extends Component {
                             target="contact_me"
                             action="https://formspree.io/daniel.d.ilievski@gmail.com"
                             method="POST"
+                            autocomplete="off"
                             onSubmit={this.onSubmitForm}>
                             <input
                                 placeholder="Your Name"
                                 className={classes.Input}
                                 type="text"
                                 name="name"
-                                required/>
+                                required
+                                />
                             <input
                                 placeholder="Your Email"
                                 className={classes.Input}

@@ -16,12 +16,19 @@
 }
 
 .PanelLeft {
-    width: 30%;
+    width: 360px;
+    padding-top: 20px;
+}
+
+.PanelLeft p {
+    margin-bottom: 10px;
+    font-size: 1.4em;
 }
 
 .FormContainer {
     display: block;
-    width: 30%;
+    max-width: 30%;
+    margin: 0 30px;
 }
 
 .Form {
@@ -35,7 +42,7 @@
 .Input {
     width: 100%;
     height: 50px;
-    padding: 3px;
+    padding: 0 5px;
     font-size: 1.2em;
     outline: none;
     background: none;
@@ -53,7 +60,7 @@
 .TextArea {
     width: 100%;
     height: 300px;
-    padding: 3px;
+    padding: 5px;
     resize: none;
     font-family: 'Lato', sans-serif;
     font-size: 1em;
@@ -95,6 +102,16 @@
 
     animation: astroFloat 5s ease;
     animation-iteration-count: infinite;
+}
+
+.HoverUnderline {
+    font-weight: bold;
+}
+
+.HoverUnderline:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    
 }
 
 @keyframes astroFloat {
