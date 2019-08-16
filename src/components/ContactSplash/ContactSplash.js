@@ -3,6 +3,7 @@ import aboutClasses from '../../containers/AboutSplash/AboutSplash.css';
 import classes from './ContactSplash.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faPaperPlane} from '@fortawesome/free-regular-svg-icons';
+import {faInstagram, faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
 
 import astro from '../../images/astro.svg';
 
@@ -22,6 +23,10 @@ class ContactSplash extends Component {
         window.open('about:blank', 'contact_me', 'width=800,height=600');
     }
 
+    onClickToFocusContact = () => {
+        this.nameInput.focus();
+    }
+
     render() {
         return (
             <div className={classes.Container}>
@@ -35,11 +40,11 @@ class ContactSplash extends Component {
                 <div className={classes.Content}>
                     <div className={classes.PanelLeft}>
                         <p>
-                            If you would like to build something great or just say hi, <span className={classes.HoverUnderline}>fill out the form</span> on the right. 
+                            If you would like to build something great or just say hi, <span onClick={this.onClickToFocusContact} className={classes.TextLink}>fill out the form</span> on the right. 
                         </p>
                         
                         <p>
-                            If you would like to build something great or just say hi, fill out the form on the right. 
+                            Also you can find me on <span className={classes.TextLink}><FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>&nbsp;LinkedIn</span>, see some of my projects on <span className={classes.TextLink}><FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>&nbsp;GitHub</span>
                         </p>
                     </div>
                     <div className={classes.FormContainer}>
@@ -57,6 +62,7 @@ class ContactSplash extends Component {
                                 type="text"
                                 name="name"
                                 required
+                                ref={(input) => { this.nameInput = input; }} 
                                 />
                             <input
                                 placeholder="Your Email"

@@ -104,11 +104,13 @@
     animation-iteration-count: infinite;
 }
 
-.HoverUnderline {
+.TextLink {
     font-weight: bold;
+    box-sizing: border-box;
+    white-space: nowrap;
 }
 
-.HoverUnderline:hover {
+.TextLink:hover {
     text-decoration: underline;
     cursor: pointer;
     
