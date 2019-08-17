@@ -4,12 +4,12 @@
     position: fixed;
     background: transparent;
     z-index: 1000;
-    overflow: hidden;
 
-    transition: all .2s ease-in;
+    transition: all .15s ease-in;
 }
 
-.SidebarContainer:hover {
+
+.SidebarContainer.Hover:hover {
     width: 200px;
 }
 
@@ -28,6 +28,7 @@
     animation-fill-mode: forwards;
     animation-duration: 300ms;
     animation-timing-function: ease-in-out;
+    overflow: hidden;
 }
 
 .Mask {
@@ -79,7 +80,7 @@
 
 @keyframes open {
     0% {
-        left: -100px;}
+        left: -60px;}
     100% {
         left: 0}
 }
@@ -88,6 +89,6 @@
     0% {
         left: 0}
     100% {
-        left: -100px;}
+        left: -60px;}
 }
 

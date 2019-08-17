@@ -3,7 +3,6 @@ import classes from './Sidebar.css';
 
 class Sidebar extends Component {
 
-
     render() {
 
         const wowClasses = [classes.Sidebar];
@@ -14,14 +13,13 @@ class Sidebar extends Component {
         }
 
         return (
-            <div className={classes.SidebarContainer}>
+            <div className={`${classes.SidebarContainer} ${this.props.open ? classes.Hover : null}`}>
                 <div className={wowClasses.join(' ')}>
                     <div className={classes.Mask}></div>
                     <ul className={classes.Menu}>
                         <li onClick={() => this.props.choiceHandler(2)}>
                             ABOUT
                         </li>
-
                         <li onClick={() => this.props.choiceHandler(3)}>
                             SERVICES
                         </li>
