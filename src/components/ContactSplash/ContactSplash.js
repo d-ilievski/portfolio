@@ -39,12 +39,12 @@ class ContactSplash extends Component {
 
                 <div className={classes.Content}>
                     <div className={classes.PanelLeft}>
-                        <p>
+                        <p className={'wow ' + aboutClasses.Appear} data-wow-delay=".65s">
                             If you would like to build something great or just say hi, <span onClick={this.onClickToFocusContact} className={classes.TextLink}>fill out the form</span> on the right. 
                         </p>
                         
-                        <p>
-                            Also you can find me on <span className={classes.TextLink}><FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>&nbsp;LinkedIn</span>, see some of my projects on <span className={classes.TextLink}><FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>&nbsp;GitHub</span>
+                        <p className={'wow ' + aboutClasses.Appear} data-wow-delay=".85s">
+                            Also you can find me on <span className={classes.TextLink}><a href="https://www.linkedin.com/in/daniel-ilievski/" rel="noopener noreferrer " target="_blank"><FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>&nbsp;LinkedIn</a></span>, see some of my projects on <span className={classes.TextLink}><a href="https://github.com/d-ilievski" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>&nbsp;GitHub</a></span> or check out my <span className={classes.TextLink}><a href="https://www.instagram.com/vo1d.mind/" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>&nbsp;Instagram</a></span> where I post the pictures I take and edit.
                         </p>
                     </div>
                     <div className={classes.FormContainer}>
@@ -54,7 +54,7 @@ class ContactSplash extends Component {
                             target="contact_me"
                             action="https://formspree.io/daniel.d.ilievski@gmail.com"
                             method="POST"
-                            autocomplete="off"
+                            autoComplete="off"
                             onSubmit={this.onSubmitForm}>
                             <input
                                 placeholder="Your Name"
@@ -83,7 +83,7 @@ class ContactSplash extends Component {
                     </div>
                 </div>
 
-                <div className={' wow ' + aboutClasses.Appear}>
+                <div className={' wow ' + aboutClasses.Appear} data-wow-delay="1.25s">
                     <img src={astro} alt="astro" className={classes.Astro}/>
 
                     <div

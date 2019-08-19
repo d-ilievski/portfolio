@@ -28,7 +28,8 @@ class AboutSplash extends Component {
             <div className={`${classes.Container} scrollSnapChild`}>
                 <div className={classes.ServicesSplash}>
 
-                    <h1 className={classes.Heading}>
+                    <h1 className={classes.Heading + ' wow ' + classes.Appear} data-wow-delay="0.5s"
+                    data-type="section" data-id="2">
                         <span>ABOUT</span>
                     </h1>
 

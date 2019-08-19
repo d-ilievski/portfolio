@@ -21,8 +21,9 @@
 }
 
 .PanelLeft p {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 1.4em;
+    line-height: 1.7em;
 }
 
 .FormContainer {

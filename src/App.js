@@ -5,11 +5,21 @@ import WOW from 'wowjs';
 
 class App extends Component {
 
+  main = React.createRef();
+
   componentDidMount() {
+
     new WOW
         .WOW( {
           // not using mutation observer because we are not adding new elements dynamically
-          live: false
+          live: false,
+          // callback: (e) => {
+          //   if(e.dataset.type === "section") {
+          //     setTimeout(() => {
+          //       this.main.current.handleChoice(e.dataset.id);
+          //     }, 1000);
+          //   }
+          // }
         })
         .init();
 }
@@ -18,7 +28,7 @@ class App extends Component {
 
     return (
       <div className={classes.App}>
-        <Main/>
+        <Main ref={this.main}/>
       </div>
     );
   }
