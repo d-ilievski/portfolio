@@ -7,19 +7,21 @@
     width: 100%;
 }
 
+
 .GraphChart {
-    width: 600px;
+    width: 400px;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: visible;
 
     background: repeating-linear-gradient(
     to right,
     #ddd,
     #ddd 1px,
     #fff 1px,
-    #fff 9.99%
+    #fff 9.9%
   );
 }
 

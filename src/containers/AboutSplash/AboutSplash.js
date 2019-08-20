@@ -37,14 +37,12 @@ class AboutSplash extends Component {
 
                         <div className={[classes.NameCard, 'wow'].join(" ")}>
                             <img className={classes.Image} alt='slika na daniel hehe' src={daniel}/>
-                            <h3>Who dis?</h3>
-                            <p>I'm Daniel Ilievski, developer and graphic designer from Skopje, Macedonia.</p>
-                            <p>Многу сакам да какам.
-                                <strong>Ајде да какаме заедно.</strong>
-                            </p>
+                            <h3>Who's this guy?</h3>
+                            <p className={classes.JustifyText}>I'm Daniel Ilievski, frontend developer and designer at <a href="https://www.emitknowledge.com/"><strong>EmitKnowledge</strong></a> in Skopje, Macedonia.</p>
+                            <p className={classes.JustifyText}></p>
                         </div>
 
-                        <div>
+                        <div className={classes.GraphContainer}>
                             <h2 style={{marginTop: '0'}}>SKILLS</h2>
                             <AboutGraph
                                 choiceHandler={this.graphChoiceHandler}
