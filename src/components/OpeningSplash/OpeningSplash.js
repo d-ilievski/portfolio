@@ -27,7 +27,7 @@ class OpeningSplash extends Component {
         return (
             <div className={classes.Container}>
                 <div className={classes.OpeningSplash}>
-                    <Logo/>
+                    <Logo choiceHandler={this.props.choiceHandler}/>
                 </div>
                 <div className={wowClasses.join(' ')}>
                     <Navigation choiceHandler={this.props.choiceHandler}/>

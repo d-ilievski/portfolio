@@ -1,24 +1,11 @@
-.Container {
-    width: 100%;
-    margin: 0;
-    margin-bottom: 50px;
-    display: flex;
-    box-sizing: border-box;
-    background: white;
-
-    scroll-snap-align: start;
-}
-
-
 .GraphContainer {
     width: 50%;
 }
 
 .ServicesSplash {
-    width: 100%;
-    margin-left: 100px;
-    display: flex;
-    flex-direction: column;
+    width: 80%;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .Heading {
@@ -32,7 +19,7 @@
 }
 
 .Heading span {
-    
+
     border-bottom: 3px solid white;
     mix-blend-mode: difference;
 }
@@ -50,10 +37,24 @@
 }
 
 .NameCard {
-    border-width: 3px; border-style: solid; border-color: #000000; max-width: 230px; max-height: fit-content; padding: 20px 20px;
+    transition: all 2s ease;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #000000;
+    max-width: 250px;
+    max-height: fit-content;
+    padding: 20px 20px;
 }
 
-.JustifyText {}
+.Grow:hover {
+    transition: font-size .1s ease;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.CardParagraph {
+    margin-bottom: 10px;
+}
 
 .Appear {
     opacity: 0;

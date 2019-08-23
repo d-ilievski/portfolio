@@ -15,7 +15,7 @@ class Logo extends Component {
 
         return (
             <Auxilliary>
-                <div className={classes.Logo}>
+                <div className={'wow ' + classes.Logo} onClick={() => this.props.choiceHandler(2)}>
                     <div className={classes.Name}>
                         Daniel Ilievski
                     </div>

@@ -25,7 +25,7 @@ class AboutSplash extends Component {
     render() {
 
         return (
-            <div className={`${classes.Container} scrollSnapChild`}>
+            
                 <div className={classes.ServicesSplash}>
 
                     <h1 className={classes.Heading + ' wow ' + classes.Appear} data-wow-delay="0.5s"
@@ -38,8 +38,8 @@ class AboutSplash extends Component {
                         <div className={[classes.NameCard, 'wow'].join(" ")}>
                             <img className={classes.Image} alt='slika na daniel hehe' src={daniel}/>
                             <h3>Who's this guy?</h3>
-                            <p className={classes.JustifyText}>I'm Daniel Ilievski, frontend developer and designer at <a href="https://www.emitknowledge.com/"><strong>EmitKnowledge</strong></a> in Skopje, Macedonia.</p>
-                            <p className={classes.JustifyText}></p>
+                            <p className={classes.CardParagraph}>I'm Daniel Ilievski from <a className={classes.Grow} rel="noopener noreferrer" target="_blank" href="https://www.google.com/maps/place/Skopje/@41.6809254,16.3102679,7z"><strong>Skopje</strong></a> and I'm a frontend developer and occasional designer at <a className={classes.Grow} rel="noopener noreferrer" target="_blank" href="https://www.emitknowledge.com/"><strong>EmitKnowledge</strong></a>.</p>
+                            I love building awesome stuff. <span className={classes.Grow} rel="noopener noreferrer" target="_blank" href=""><strong>Wanna create something great together?</strong></span>
                         </div>
 
                         <div className={classes.GraphContainer}>
@@ -52,7 +52,7 @@ class AboutSplash extends Component {
                     </div>
 
                 </div>
-            </div>
+            
         );
     }
 };

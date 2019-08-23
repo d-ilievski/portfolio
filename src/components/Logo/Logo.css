@@ -16,7 +16,7 @@
 }
 
 .Logo:hover {
-  cursor: default;
+  cursor: pointer;
   transform: scale(1.1);
 
   /* background: black;
