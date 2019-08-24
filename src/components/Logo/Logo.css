@@ -1,23 +1,23 @@
 .Logo {
-    max-width: 0;
-    max-height: 0;
-    
+  max-width: 0;
+  max-height: 0;
 
-    overflow: hidden;
-    animation-name: grow;
-    animation-duration: 1.5s;
-    animation-delay: .5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
 
-    white-space: nowrap;
+  overflow: hidden;
+  animation-name: grow;
+  animation-duration: 1.5s;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
 
-    transition: all .2s ease-in-out;
+  white-space: nowrap;
+
+  transition: all .2s ease-in-out;
 }
 
 .Logo:hover {
   cursor: pointer;
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
 
   /* background: black;
   mix-blend-mode: difference;
@@ -25,17 +25,17 @@
 }
 
 .Name {
-    font-size: 400%;
-    margin: -5px;
+  font-size: 4rem;
+  margin: -.5rem;
 }
 
 .Title {
-    font-size: 100%;
+  font-size: 100%;
 }
 
 .Bubble {
-    width: 40px;
-    margin-top: -18em;
+  width: 40px;
+  margin-top: -18em;
   border: 4px solid #00bfb6;
   border-radius: 30px;
   padding: 20px;
@@ -44,44 +44,118 @@
   color: #00bfb6;
 
   position: relative;
-  
+
 }
 
 .Bubble:before {
-    content: "";
-    width: 0px;
-    height: 0px;
-    position: absolute;
-    border-left: 10px solid #00bfb6;
-    border-right: 10px solid transparent;
-    border-top: 10px solid #00bfb6;
-    border-bottom: 10px solid transparent;
-    left: 20px;
-    bottom: -23px;
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid #00bfb6;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #00bfb6;
+  border-bottom: 10px solid transparent;
+  left: 20px;
+  bottom: -23px;
+}
+
+.Bubble:after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid #fff;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #fff;
+  border-bottom: 10px solid transparent;
+  left: 24px;
+  bottom: -13px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .Logo {
+    transform: scale(1)
   }
-  
-  .Bubble:after {
-    content: "";
-    width: 0px;
-    height: 0px;
-    position: absolute;
-    border-left: 10px solid #fff;
-    border-right: 10px solid transparent;
-    border-top: 10px solid #fff;
-    border-bottom: 10px solid transparent;
-    left: 24px;
-    bottom: -13px;
+
+  .Name {
+    font-size: 3rem;
+    margin: -.2rem;
   }
+}
+
+@media screen and (max-width: 425px) {
+  .Name {
+    font-size: 2.3rem;
+    margin: -.2rem;
+  }
+
+  .Logo {
+    transform: scale(.8)
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .Name {
+    font-size: 2.2rem;
+    margin: -.2rem;
+  }
+}
+
+
+
+
 
 
 @keyframes grow {
-    0% {border-width: 5px; border-style: solid; border-color: #000000; max-width: 0; max-height: 0; padding: 0;}
-    40% {border-width: 5px; border-style: solid; border-color: #000000; max-width: 0; max-height: 350px; padding: 20px 0px;}
-    85% {border-width: 5px; border-style: solid; border-color: #000000; max-width: 1500px; max-height: 350px; padding: 20px 50px;}
-    100% {border-width: 5px; border-style: solid; border-color: #000000; max-width: 1500px; max-height: 350px; padding: 20px 50px;}
+  0% {
+    border-width: 5px;
+    border-style: solid;
+    border-color: #000000;
+    max-width: 0;
+    max-height: 0;
+    padding: 0;
+  }
+
+  40% {
+    border-width: 5px;
+    border-style: solid;
+    border-color: #000000;
+    max-width: 0;
+    max-height: 350px;
+    padding: 20px 0px;
+  }
+
+  85% {
+    border-width: 5px;
+    border-style: solid;
+    border-color: #000000;
+    max-width: 1500px;
+    max-height: 350px;
+    padding: 20px 50px;
+  }
+
+  100% {
+    border-width: 5px;
+    border-style: solid;
+    border-color: #000000;
+    max-width: 1500px;
+    max-height: 350px;
+    padding: 20px 50px;
+  }
 }
 
 @keyframes pop-hi {
-    0% {width: 0; height: 0; }
-    100% {width: 40px; border: 4px solid #00bfb6; padding: 20px; overflow: visible}
+  0% {
+    width: 0;
+    height: 0;
+  }
+
+  100% {
+    width: 40px;
+    border: 4px solid #00bfb6;
+    padding: 20px;
+    overflow: visible
+  }
 }

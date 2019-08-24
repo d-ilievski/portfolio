@@ -1,7 +1,23 @@
 import React, {Component} from 'react';
 import classes from './Sidebar.css';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+
 
 class Sidebar extends Component {
+
+    state = {
+        mobileSidebarOpen: false,
+    }
+
+    mobileToggleSidebar = () => {
+        this.setState((prevState, nextState) => {
+            return {
+                mobileSidebarOpen: !prevState.mobileSidebarOpen,
+            }
+        } )
+        
+    }
 
     render() {
 
@@ -13,7 +29,11 @@ class Sidebar extends Component {
         }
 
         return (
-            <div className={`${classes.SidebarContainer} ${this.props.open ? classes.Hover : null}`}>
+            <div className={`${classes.SidebarContainer} ${this.props.open ? classes.Hover : null} ${this.state.mobileSidebarOpen ? classes.Open : null}`}>
+                <div className={`${classes.Hamburger} ${ this.state.mobileSidebarOpen ? classes.Open : null}`} onClick={this.mobileToggleSidebar}>
+                    <FontAwesomeIcon icon={this.state.mobileSidebarOpen ? faTimes : faBars}></FontAwesomeIcon>
+                </div>
+                <div onClick={this.mobileToggleSidebar} className={`${classes.MobileSidebarMask} ${this.state.mobileSidebarOpen ? classes.Open : null}`}></div>
                 <div className={wowClasses.join(' ')}>
                     <div className={classes.Mask}></div>
                     <ul className={classes.Menu}>

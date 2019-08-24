@@ -26,7 +26,7 @@ class AboutSplash extends Component {
 
         return (
             
-                <div className={classes.ServicesSplash}>
+                <div className={classes.AboutSplash}>
 
                     <h1 className={classes.Heading + ' wow ' + classes.Appear} data-wow-delay="0.5s"
                     data-type="section" data-id="2">

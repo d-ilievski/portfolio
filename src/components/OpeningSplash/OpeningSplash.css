@@ -48,6 +48,12 @@
     height: 100vh;
 }
 
+@media screen and (max-width: 768px) {
+    .BlackBackground {
+        display: none;
+    }
+  }
+
 
 @keyframes drawerOpen {
     0% {width: 0%}

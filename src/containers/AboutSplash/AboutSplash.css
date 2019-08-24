@@ -2,10 +2,11 @@
     width: 50%;
 }
 
-.ServicesSplash {
+.AboutSplash {
     width: 80%;
     max-width: 1440px;
     margin: auto;
+    background: white;
 }
 
 .Heading {

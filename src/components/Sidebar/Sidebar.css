@@ -8,15 +8,10 @@
     transition: all .15s ease-in;
 }
 
-
-.SidebarContainer.Hover:hover {
-    width: 200px;
-}
-
 .Sidebar {
     width: 100%;
     height: 100%;
-    
+
     background: black;
     position: relative;
     left: -60px;
@@ -29,6 +24,10 @@
     animation-duration: 300ms;
     animation-timing-function: ease-in-out;
     overflow: hidden;
+}
+
+.MobileSidebarMask {
+    display: none;
 }
 
 .Mask {
@@ -78,17 +77,70 @@
     border-bottom: 3px solid white;
 }
 
+.Hamburger {
+    display: none;
+}
+
+@media screen and (min-width: 769px) {
+    .SidebarContainer.Hover:hover {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .SidebarContainer {
+        width: 0;
+    }
+
+    .SidebarContainer.Open {
+        width: 200px;
+    }
+
+    .Hamburger {
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        color: black;
+        z-index: 1100;
+    }
+
+    .Hamburger.Open {
+        color: white;
+    }
+
+    .MobileSidebarMask.Open {
+        position: absolute;
+        z-index: 800;
+        top: 0;
+        left: 200px;
+        width: 100vw;
+        height: 100vh;
+        background: transparent;
+        display: block;
+    }
+
+    .Sidebar {
+        position: static;
+    }
+}
+
 @keyframes open {
     0% {
-        left: -60px;}
+        left: -60px;
+    }
+
     100% {
-        left: 0}
+        left: 0
+    }
 }
 
 @keyframes close {
     0% {
-        left: 0}
-    100% {
-        left: -60px;}
-}
+        left: 0
+    }
 
+    100% {
+        left: -60px;
+    }
+}
