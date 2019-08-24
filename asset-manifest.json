@@ -1,7 +1,7 @@
 {
-  "main.css": "/portfolio/static/css/main.5ac57648.chunk.css",
-  "main.js": "/portfolio/static/js/main.e05d6f3d.chunk.js",
-  "main.js.map": "/portfolio/static/js/main.e05d6f3d.chunk.js.map",
+  "main.css": "/portfolio/static/css/main.d2a1e347.chunk.css",
+  "main.js": "/portfolio/static/js/main.50c25af0.chunk.js",
+  "main.js.map": "/portfolio/static/js/main.50c25af0.chunk.js.map",
   "static/js/1.031a17bd.chunk.js": "/portfolio/static/js/1.031a17bd.chunk.js",
   "static/js/1.031a17bd.chunk.js.map": "/portfolio/static/js/1.031a17bd.chunk.js.map",
   "runtime~main.js": "/portfolio/static/js/runtime~main.ee2a1003.js",
@@ -12,8 +12,8 @@
   "static/media/oblecime-bg.jpg": "/portfolio/static/media/oblecime-bg.78beb417.jpg",
   "static/media/trackadoBg.png": "/portfolio/static/media/trackadoBg.f4becc90.png",
   "static/media/astro.svg": "/portfolio/static/media/astro.7ed3742b.svg",
-  "static/css/main.5ac57648.chunk.css.map": "/portfolio/static/css/main.5ac57648.chunk.css.map",
+  "static/css/main.d2a1e347.chunk.css.map": "/portfolio/static/css/main.d2a1e347.chunk.css.map",
   "index.html": "/portfolio/index.html",
-  "precache-manifest.7ddd5359dbcd83d2003a496ef4cb24ec.js": "/portfolio/precache-manifest.7ddd5359dbcd83d2003a496ef4cb24ec.js",
+  "precache-manifest.ba6be36c3be590d62bd742c88f6b53b7.js": "/portfolio/precache-manifest.ba6be36c3be590d62bd742c88f6b53b7.js",
   "service-worker.js": "/portfolio/service-worker.js"
 }
