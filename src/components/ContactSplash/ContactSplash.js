@@ -83,7 +83,7 @@ class ContactSplash extends Component {
                     </div>
                 </div>
 
-                <div className={' wow ' + aboutClasses.Appear} data-wow-delay="1.25s">
+                <div className={' wow ' + aboutClasses.Appear} data-wow-delay=".5s">
                     <img src={astro} alt="astro" className={classes.Astro}/>
 
                     <div

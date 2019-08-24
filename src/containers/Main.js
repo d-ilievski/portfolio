@@ -68,7 +68,7 @@ class Main extends Component {
 
                 <div ref={el => this["section-2"] = el}>
 
-                    <AboutSplash/>
+                    <AboutSplash handleChoice={this.handleChoice}/>
 
                 </div>
 
