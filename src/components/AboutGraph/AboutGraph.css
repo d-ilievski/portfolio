@@ -10,6 +10,7 @@
 
 .GraphChart {
     /* width: 400px; */
+    flex-grow: 1;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -21,7 +22,7 @@
     #ddd,
     #ddd 1px,
     #fff 1px,
-    #fff 9.9%
+    #fff 9.988%
   );
 }
 
@@ -73,8 +74,8 @@
     background: black;
     width: 0;
     
-    animation-duration: 1s;
-    animation-delay: 800ms;
+    animation-duration: 500ms;
+    /* animation-delay: 800ms; */
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 
@@ -136,15 +137,11 @@
 
     animation-name: appearPerc;
     animation-delay: 1000ms;
-    animation-duration: 500ms;
+    animation-duration: 250ms;
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
 }
 
-@keyframes appearPerc {
-    from {opacity: 0;}
-    to {opacity: 1; transform: translateX(0) }
-}
 
 .Item60 {
     animation-name: chartItem60;
@@ -164,6 +161,23 @@
 
 .Item100 {
     animation-name: chartItem100;
+}
+
+@media screen and (max-width: 768px) {
+    .GraphChart {
+        flex-grow: 1;
+    }
+
+    .GraphVariables {
+        margin: 0 10px 0 20px;
+        min-width: unset;
+        /* max-width: 100px; */
+    }
+}
+
+@keyframes appearPerc {
+    from {opacity: 0;}
+    to {opacity: 1; transform: translateX(0) }
 }
 
 @keyframes appearOptions {

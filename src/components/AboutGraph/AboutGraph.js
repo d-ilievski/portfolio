@@ -28,7 +28,7 @@ class AboutGraph extends Component {
                         : {}
                 ].join(' ')}
                     onClick={() => this.props.choiceHandler(2)}>
-                    GRAPHIC DESIGNER
+                    DESIGNER
                 </span>
             </div>
         );
@@ -38,10 +38,10 @@ class AboutGraph extends Component {
         if (this.props.active === 1) {
             return (
                 <div
-                    className={'wow'}
                     style={{
                     display: 'flex',
-                    flexDirection: 'row'
+                    flexDirection: 'row',
+                    flexGrow: '1',
                 }}>
                     <div className={classes.GraphVariables}>
                         <span className={classes.GraphVariable}>JavaScript</span>
@@ -56,37 +56,37 @@ class AboutGraph extends Component {
                             style={{
                             display: 'flex'
                         }}>
-                            <div className={[classes.GraphChartItem, classes.Item90].join(' ')}></div>
+                            <div data-wow-delay="0s" className={['wow', classes.GraphChartItem, classes.Item90].join(' ')}></div>
                         </div>
                         <div
                             style={{
                             display: 'flex'
                         }}>
-                            <div className={[classes.GraphChartItem, classes.Item80].join(' ')}></div>
+                            <div data-wow-delay=".1s" className={['wow', classes.GraphChartItem, classes.Item80].join(' ')}></div>
                         </div>
                         <div
                             style={{
                             display: 'flex'
                         }}>
-                            <div className={[classes.GraphChartItem, classes.Item80].join(' ')}></div>
+                            <div data-wow-delay=".2s" className={['wow', classes.GraphChartItem, classes.Item80].join(' ')}></div>
                         </div>
                         <div
                             style={{
                             display: 'flex'
                         }}>
-                            <div className={[classes.GraphChartItem, classes.Item60].join(' ')}></div>
+                            <div data-wow-delay=".3s" className={['wow', classes.GraphChartItem, classes.Item60].join(' ')}></div>
                         </div>
                         <div
                             style={{
                             display: 'flex'
                         }}>
-                            <div className={[classes.GraphChartItem, classes.Item70].join(' ')}></div>
+                            <div data-wow-delay=".4s" className={['wow', classes.GraphChartItem, classes.Item70].join(' ')}></div>
                         </div>
                         <div
                             style={{
                             display: 'flex'
                         }}>
-                            <div className={[classes.GraphChartItem, classes.Item80].join(' ')}></div>
+                            <div data-wow-delay=".5s" className={['wow', classes.GraphChartItem, classes.Item80].join(' ')}></div>
                         </div>
 
                     </div>
@@ -95,11 +95,10 @@ class AboutGraph extends Component {
         } else if (this.props.active === 2) {
             return (
                 <div
-                    className={'wow'}
                     style={{
                     display: 'flex',
-                    flexDirection: 'row'
-                    
+                    flexDirection: 'row',
+                    flexGrow: '1',
                 }}>
                     <div className={classes.GraphVariables}>
                         <span className={classes.GraphVariable}>Adobe Photoshop</span>
@@ -113,38 +112,40 @@ class AboutGraph extends Component {
                         <div
                             style={{
                             display: 'flex'
-                        }}>
-                            <div className={[classes.GraphChartItem, classes.Item80].join(' ')}></div>
+                            }}
+                            
+                            >
+                            <div data-wow-delay="0s" className={['wow', classes.GraphChartItem, classes.Item80].join(' ')}></div>
                         </div>
                         <div
                             style={{
                             display: 'flex'
                         }}>
-                            <div className={[classes.GraphChartItem, classes.Item90].join(' ')}></div>
+                            <div data-wow-delay=".1s" className={['wow', classes.GraphChartItem, classes.Item90].join(' ')}></div>
                         </div>
                         <div
                             style={{
                             display: 'flex'
                         }}>
-                            <div className={[classes.GraphChartItem, classes.Item60].join(' ')}></div>
+                            <div data-wow-delay=".2s" className={['wow', classes.GraphChartItem, classes.Item60].join(' ')}></div>
                         </div>
                         <div
                             style={{
                             display: 'flex'
                         }}>
-                            <div className={[classes.GraphChartItem, classes.Item100].join(' ')}></div>
+                            <div data-wow-delay=".3s" className={['wow', classes.GraphChartItem, classes.Item100].join(' ')}></div>
                         </div>
                         <div
                             style={{
                             display: 'flex'
                         }}>
-                            <div className={[classes.GraphChartItem, classes.Item80].join(' ')}></div>
+                            <div data-wow-delay=".4s" className={['wow', classes.GraphChartItem, classes.Item80].join(' ')}></div>
                         </div>
                         <div
                             style={{
                             display: 'flex'
                         }}>
-                            <div className={[classes.GraphChartItem, classes.Item70].join(' ')}></div>
+                            <div data-wow-delay=".5s" className={['wow', classes.GraphChartItem, classes.Item70].join(' ')}></div>
                         </div>
                     </div>
                 </div>

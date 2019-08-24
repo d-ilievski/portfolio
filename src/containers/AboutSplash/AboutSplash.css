@@ -1,9 +1,10 @@
 .GraphContainer {
-    width: 50%;
+    flex-grow: 1;
+    margin-left: 50px;
 }
 
 .AboutSplash {
-    width: 80%;
+    width: 75%;
     max-width: 1440px;
     margin: auto;
     background: white;
@@ -29,7 +30,7 @@
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
-    width: 90%;
+    width: 100%;
     /* margin: auto; */
 }
 
@@ -48,9 +49,10 @@
 }
 
 .Grow:hover {
-    transition: font-size .1s ease;
-    font-size: 1.1em;
+    transition: transform .1s ease;
+    /* font-size: 1.1em; */
     cursor: pointer;
+    /* transform: scale(1.1) */
 }
 
 .CardParagraph {
@@ -65,6 +67,31 @@
     animation-fill-mode: forwards;
     transform-origin: 50% 50%;
     visibility: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    .Content {
+        width: 100%;
+    }
+
+    .GraphContainer {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .Graph {
+        height: auto;
+    }
+
+    .AboutSplash {
+        width: 75%;
+    }
+
+    .Grow:hover {
+        transition: unset;
+        font-size: unset;
+    }
+    
 }
 
 @keyframes appear {
