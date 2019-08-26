@@ -3,8 +3,9 @@ import aboutClasses from '../../containers/AboutSplash/AboutSplash.css';
 import classes from './ServicesSplash.css';
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faUser, faRocket, faTachometerAlt} from '@fortawesome/free-solid-svg-icons/'
-// import {ReactComponent as ResponsivenessLogo} from '../../images/icons/responsiveness.svg';
+import {faUser, faTachometerAlt, faChild, faCogs} from '@fortawesome/free-solid-svg-icons/'
+import Auxilliary from '../../hoc/Auxilliary';
+// import {ReactComponent as Grandparents} from '../../images/icons/grandparents.svg';
 
 class ServicesSplash extends Component {
 
@@ -31,6 +32,9 @@ class ServicesSplash extends Component {
     handleChange = () => {
 
         if (this.state.cooldown === null) {
+
+            this.props.handleChoice(3);
+
             this.setState({cooldown: setTimeout(() => {
                     this.setState({cooldown: null});
                 }, 800)});
@@ -93,7 +97,7 @@ class ServicesSplash extends Component {
 
                 <div className={classes.ContentWrapper}>
                     {/*classes.appearAndOpen*/}
-                    <div className={`${classes.ContentItem} wow ${aboutClasses.Appear} `} data-wow-delay="0.4s">
+                    <div className={`${classes.ContentItem} wow ${classes.appearAndOpen}`} data-wow-delay="0.4s">
                         <div className={classes.Icon}>
                             <FontAwesomeIcon
                                 icon={this.state.designerModeDelayed
@@ -102,38 +106,71 @@ class ServicesSplash extends Component {
                                 size="2x"></FontAwesomeIcon>
                         </div>
                         <div className={classes.Description}>
-                            <h3>High Performance</h3>
+                            {this.state.designerModeDelayed ? 
+                                <Auxilliary>
+                                    <h3>High Performance</h3>
 
-                            <p>Having a fast website is key to keeping people around which ultimately
-                                converts them into customers.</p>
-                            <strong className={classes.Link}>Read More</strong>
+                                    <p>Having a fast website is key to keeping people around which ultimately
+                                        converts them into customers.</p>
+                                </Auxilliary>
+                             : 
+                                <Auxilliary>
+                                    <h3>High Performance</h3>
+
+                                    <p>Having a fast web application is key to keeping people around which ultimately
+                                        converts them into customers.</p>
+                                </Auxilliary>
+                            }
+                            
+                            {/* <strong className={classes.Link}>Read More</strong> */}
                         </div>
                     </div>
-                    <div className={classes.ContentItem + ' wow ' + aboutClasses.Appear} data-wow-delay="0.6s">
+                    <div className={classes.ContentItem + ' wow ' + classes.appearAndOpen} data-wow-delay="0.6s">
                         <div className={classes.Icon}>
-                            <FontAwesomeIcon icon={this.state.designerModeDelayed ? faUser : faUser} size="2x"></FontAwesomeIcon>
+                            <FontAwesomeIcon icon={this.state.designerModeDelayed ? faUser : faCogs} size="2x"></FontAwesomeIcon>
                             {/* <ResponsivenessLogo/> */}
                         </div>
                         <div className={classes.Description}>
-                            <h3>Responsive</h3>
+                        {this.state.designerModeDelayed ? 
+                                <Auxilliary>
+                                    <h3>High Performance</h3>
 
-                            <p>Bridge communication gap between designers and developers...</p>
-                            <strong className={classes.Link}>Read More</strong>
+                                    <p>Having a fast website is key to keeping people around which ultimately
+                                        converts them into customers.</p>
+                                </Auxilliary>
+                             : 
+                                <Auxilliary>
+                                    <h3>Dynamic</h3>
+
+                                    <p>Having a fast web application is key to keeping people around which ultimately
+                                        converts them into customers.</p>
+                                </Auxilliary>
+                            }
+                            {/* <strong className={classes.Link}>Read More</strong> */}
                         </div>
                     </div>
-                    <div className={classes.ContentItem + ' wow ' + aboutClasses.Appear} data-wow-delay="0.8s">
+                    <div className={classes.ContentItem + ' wow ' + classes.appearAndOpen} data-wow-delay="0.8s">
                         <div className={classes.Icon}>
                             <FontAwesomeIcon
                                 icon={this.state.designerModeDelayed
                                 ? faUser
-                                : faRocket}
+                                : faChild}
                                 size="2x"></FontAwesomeIcon>
                         </div>
                         <div className={classes.Description}>
-                            <h3>Rockstar Webapps</h3>
+                        {this.state.designerModeDelayed ? 
+                                <Auxilliary>
+                                    <h3>Intuitive</h3>
 
-                            <p></p>
-                            <strong className={classes.Link}>Read More</strong>
+                                    <p>Applications so intuitive, even your grandparents can use!</p>
+                                </Auxilliary>
+                             : 
+                                <Auxilliary>
+                                    <h3>Intuitive</h3>
+                                    <p>Web applications so intuitive, even toddlers can use!</p>
+                                </Auxilliary>
+                            }
+                            {/* <strong className={classes.Link}>Read More</strong> */}
                         </div>
                     </div>
 
