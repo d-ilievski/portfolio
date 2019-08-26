@@ -92,7 +92,8 @@ class ServicesSplash extends Component {
                 </h1>
 
                 <div className={classes.ContentWrapper}>
-                    <div className={classes.ContentItem + ' wow ' + aboutClasses.Appear} data-wow-delay="0.4s">
+                    {/*classes.appearAndOpen*/}
+                    <div className={`${classes.ContentItem} wow ${aboutClasses.Appear} `} data-wow-delay="0.4s">
                         <div className={classes.Icon}>
                             <FontAwesomeIcon
                                 icon={this.state.designerModeDelayed
