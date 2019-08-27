@@ -98,9 +98,9 @@
     mix-blend-mode: difference;
 }
 
-.ContentWrapper .ContentItem .Icon:hover,
+/* .ContentWrapper .ContentItem .Icon:hover, */
 .Grow {
-    transform: scale(1.6);
+    transform: scale(1.4);
 }
 
 .ContentWrapper .ContentItem .Description h3 {
@@ -127,6 +127,7 @@
     font-size: 1em;
 }
 
+
 @media screen and (max-width: 768px) {
     .ContentWrapper {
         justify-content: space-between;
@@ -139,6 +140,8 @@
 
     .ContentItem {
         margin: 10px;
+        animation-delay: 0 !important;
+        transition-delay: 0 !important;
     }
 }
 

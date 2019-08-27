@@ -40,7 +40,7 @@ class ContactSplash extends Component {
                 <div className={classes.Content}>
                     <div className={classes.PanelLeft}>
                         <p className={'wow ' + aboutClasses.Appear} data-wow-delay=".65s">
-                            If you would like to build something great or just say hi, <span onClick={this.onClickToFocusContact} className={classes.TextLink}>fill out the form</span> on the right. 
+                            If you would like to build something great or just say hi, <span onClick={this.onClickToFocusContact} className={classes.TextLink}>fill out the form</span>. 
                         </p>
                         
                         <p className={'wow ' + aboutClasses.Appear} data-wow-delay=".85s">

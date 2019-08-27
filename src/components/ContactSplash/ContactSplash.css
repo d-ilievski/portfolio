@@ -1,8 +1,7 @@
 .Container {
-    width: 100%;
-    margin: 0;
-    padding: 30px;
-    padding-left: 100px;
+    width: 75%;
+    margin: auto;
+    padding-bottom: 50px;
     box-sizing: border-box;
     background: white;
 
@@ -13,6 +12,7 @@
 .Content {
     display: flex;
     justify-content: space-evenly;
+    flex-flow: row wrap;
 }
 
 .PanelLeft {
@@ -28,7 +28,7 @@
 
 .FormContainer {
     display: block;
-    max-width: 30%;
+    max-width: 350px;
     margin: 0 30px;
 }
 

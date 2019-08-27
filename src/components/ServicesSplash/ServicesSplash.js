@@ -3,7 +3,7 @@ import aboutClasses from '../../containers/AboutSplash/AboutSplash.css';
 import classes from './ServicesSplash.css';
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faUser, faTachometerAlt, faChild, faCogs} from '@fortawesome/free-solid-svg-icons/'
+import {faUser, faCogs, faFeatherAlt, faCompass, faEye} from '@fortawesome/free-solid-svg-icons/'
 import Auxilliary from '../../hoc/Auxilliary';
 // import {ReactComponent as Grandparents} from '../../images/icons/grandparents.svg';
 
@@ -96,28 +96,29 @@ class ServicesSplash extends Component {
                 </h1>
 
                 <div className={classes.ContentWrapper}>
-                    {/*classes.appearAndOpen*/}
                     <div className={`${classes.ContentItem} wow ${classes.appearAndOpen}`} data-wow-delay="0.4s">
-                        <div className={classes.Icon}>
+                        <div className={`${classes.Icon}`}>
                             <FontAwesomeIcon
+                                className={`wow ${classes.Grow}`}
                                 icon={this.state.designerModeDelayed
-                                ? faUser
-                                : faTachometerAlt}
+                                ? faEye
+                                : faFeatherAlt}
                                 size="2x"></FontAwesomeIcon>
                         </div>
                         <div className={classes.Description}>
                             {this.state.designerModeDelayed ? 
                                 <Auxilliary>
-                                    <h3>High Performance</h3>
+                                    <h3>Featherlight</h3>
 
-                                    <p>Having a fast website is key to keeping people around which ultimately
-                                        converts them into customers.</p>
+                                    <p>
+                                        Working alongside clients when designing UI/UX prototypes 
+                                    </p>
                                 </Auxilliary>
                              : 
                                 <Auxilliary>
-                                    <h3>High Performance</h3>
+                                    <h3>Featherlight</h3>
 
-                                    <p>Having a fast web application is key to keeping people around which ultimately
+                                    <p>Having a fast lightweight web application is key to keeping people around which ultimately
                                         converts them into customers.</p>
                                 </Auxilliary>
                             }
@@ -127,23 +128,24 @@ class ServicesSplash extends Component {
                     </div>
                     <div className={classes.ContentItem + ' wow ' + classes.appearAndOpen} data-wow-delay="0.6s">
                         <div className={classes.Icon}>
-                            <FontAwesomeIcon icon={this.state.designerModeDelayed ? faUser : faCogs} size="2x"></FontAwesomeIcon>
+                            <FontAwesomeIcon icon={this.state.designerModeDelayed ? faUser : faCogs} size="2x" className={`wow ${classes.Grow}`}></FontAwesomeIcon>
                             {/* <ResponsivenessLogo/> */}
                         </div>
                         <div className={classes.Description}>
                         {this.state.designerModeDelayed ? 
                                 <Auxilliary>
-                                    <h3>High Performance</h3>
+                                    <h3>Interactive</h3>
 
-                                    <p>Having a fast website is key to keeping people around which ultimately
-                                        converts them into customers.</p>
+                                    <p>Structured design approach for developing high-level interaction design prototypes using simple interactive media.</p>
                                 </Auxilliary>
+                                
                              : 
                                 <Auxilliary>
-                                    <h3>Dynamic</h3>
+                                    <h3>Scalable</h3>
 
-                                    <p>Having a fast web application is key to keeping people around which ultimately
-                                        converts them into customers.</p>
+                                    <p>
+                                        Web applications built using component-based architectures, following the best and appropriate design practices are easy to scale and grow.
+                                    </p>
                                 </Auxilliary>
                             }
                             {/* <strong className={classes.Link}>Read More</strong> */}
@@ -152,9 +154,10 @@ class ServicesSplash extends Component {
                     <div className={classes.ContentItem + ' wow ' + classes.appearAndOpen} data-wow-delay="0.8s">
                         <div className={classes.Icon}>
                             <FontAwesomeIcon
+                                className={`wow ${classes.Grow}`}
                                 icon={this.state.designerModeDelayed
                                 ? faUser
-                                : faChild}
+                                : faCompass}
                                 size="2x"></FontAwesomeIcon>
                         </div>
                         <div className={classes.Description}>
@@ -162,12 +165,15 @@ class ServicesSplash extends Component {
                                 <Auxilliary>
                                     <h3>Intuitive</h3>
 
-                                    <p>Applications so intuitive, even your grandparents can use!</p>
+                                    <p></p>
                                 </Auxilliary>
                              : 
                                 <Auxilliary>
                                     <h3>Intuitive</h3>
-                                    <p>Web applications so intuitive, even toddlers can use!</p>
+                                    <p>
+                                        The easier your website is to use, the more people use it.
+                                        An essential part of “easy to use” is intuitiveness. 
+                                        When a user sees it, they know exactly what to do.</p>
                                 </Auxilliary>
                             }
                             {/* <strong className={classes.Link}>Read More</strong> */}

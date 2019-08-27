@@ -54,6 +54,7 @@
     /* font-size: 1.1em; */
     cursor: pointer;
     /* transform: scale(1.1) */
+    text-decoration: underline;
 }
 
 .CardParagraph {
