@@ -26,7 +26,6 @@ class ProjectsSplash extends Component {
                 <h1 className={aboutClasses.Heading + ' wow ' + aboutClasses.Appear} data-wow-delay="0s" style={{visibility: 'hidden'}}>
                     <span>PROJECTS</span>
                 </h1>
-                <div className={'title-mask'}></div>
 
                 <div className={classes.TilesContainer}>
                     <div className={classes.TilesRow}>

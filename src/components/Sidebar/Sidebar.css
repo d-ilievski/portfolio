@@ -105,10 +105,11 @@
         z-index: 1100;
         
         display: flex;
-        width: 30px;
-        height: 30px; 
+        width: 40px;
+        height: 40px; 
 
         font-size: 1rem;
+        outline: none;
     }
 
     .Hamburger.Open {
@@ -128,6 +129,28 @@
 
     .Sidebar {
         position: static;
+    }
+}
+
+.Appear {
+    opacity: 0;
+    animation-name: appear;
+    animation-duration: .5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    transform-origin: 20% 20%;
+    visibility: hidden;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
     }
 }
 

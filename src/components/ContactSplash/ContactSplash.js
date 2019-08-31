@@ -40,7 +40,7 @@ class ContactSplash extends Component {
                 <div className={classes.Content}>
                     <div className={classes.PanelLeft}>
                         <p className={'wow ' + aboutClasses.Appear} data-wow-delay=".65s">
-                            If you would like to build something great or just say hi, <span onClick={this.onClickToFocusContact} className={classes.TextLink}>fill out the form</span>. 
+                            If you would like to build something great or just say hi, <span onClick={this.onClickToFocusContact} className={classes.TextLink}>fill out the form</span> or email me on <a target="_top" href='mailto:daniel.d.ilievski@gmail.com' className={classes.TextLink}>daniel.d.ilievski@gmail.com</a>. 
                         </p>
                         
                         <p className={'wow ' + aboutClasses.Appear} data-wow-delay=".85s">
@@ -90,7 +90,7 @@ class ContactSplash extends Component {
                         style={{
                         fontFamily: "'Courier New', monospace",
                         textAlign: 'center',
-                        marginTop: "150px"
+                        marginTop: "130px"
                     }}>
                         Crafted with&nbsp;
                         <span

@@ -96,7 +96,7 @@ class ServicesSplash extends Component {
                 </h1>
 
                 <div className={classes.ContentWrapper}>
-                    <div className={`${classes.ContentItem} wow ${classes.appearAndOpen}`} data-wow-delay="0.4s">
+                    <div className={`${classes.ContentItem} wow ${classes.appearAndOpen}`} data-wow-delay="0.4s" data-wow-offset="220">
                         <div className={`${classes.Icon}`}>
                             <FontAwesomeIcon
                                 className={`wow ${classes.Grow}`}
@@ -126,7 +126,7 @@ class ServicesSplash extends Component {
                             {/* <strong className={classes.Link}>Read More</strong> */}
                         </div>
                     </div>
-                    <div className={classes.ContentItem + ' wow ' + classes.appearAndOpen} data-wow-delay="0.6s">
+                    <div className={classes.ContentItem + ' wow ' + classes.appearAndOpen} data-wow-delay="0.6s" data-wow-offset="220">
                         <div className={classes.Icon}>
                             <FontAwesomeIcon icon={this.state.designerModeDelayed ? faUser : faCogs} size="2x" className={`wow ${classes.Grow}`}></FontAwesomeIcon>
                             {/* <ResponsivenessLogo/> */}
@@ -151,7 +151,7 @@ class ServicesSplash extends Component {
                             {/* <strong className={classes.Link}>Read More</strong> */}
                         </div>
                     </div>
-                    <div className={classes.ContentItem + ' wow ' + classes.appearAndOpen} data-wow-delay="0.8s">
+                    <div className={classes.ContentItem + ' wow ' + classes.appearAndOpen} data-wow-delay="0.8s" data-wow-offset="220">
                         <div className={classes.Icon}>
                             <FontAwesomeIcon
                                 className={`wow ${classes.Grow}`}

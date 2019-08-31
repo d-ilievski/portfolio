@@ -3,7 +3,6 @@ import classes from './Sidebar.css';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
-
 class Sidebar extends Component {
 
     state = {
@@ -30,7 +29,7 @@ class Sidebar extends Component {
 
         return (
             <div className={`${classes.SidebarContainer} ${this.props.open ? classes.Hover : null} ${this.state.mobileSidebarOpen ? classes.Open : null}`}>
-                <div className={`${classes.Hamburger} ${ this.state.mobileSidebarOpen ? classes.Open : null}`} onClick={this.mobileToggleSidebar}>
+                <div data-wow-delay="2s" className={`wow ${classes.Appear} ${classes.Hamburger} ${ this.state.mobileSidebarOpen ? classes.Open : null}`} onClick={this.mobileToggleSidebar}>
                     <FontAwesomeIcon icon={this.state.mobileSidebarOpen ? faTimes : faBars}></FontAwesomeIcon>
                 </div>
                 <div onClick={this.mobileToggleSidebar} className={`${classes.MobileSidebarMask} ${this.state.mobileSidebarOpen ? classes.Open : null}`}></div>

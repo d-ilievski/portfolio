@@ -29,7 +29,6 @@
 .FormContainer {
     display: block;
     max-width: 350px;
-    margin: 0 30px;
 }
 
 .Form {
@@ -52,6 +51,8 @@
     
     border: none;
     border-bottom: .5px solid rgb(51, 51, 51);
+
+    border-radius: 0;
 }
 
 .Input:focus {
@@ -115,6 +116,13 @@
     text-decoration: underline;
     cursor: pointer;
     
+}
+
+@media screen and (max-width: 389px) {
+    .Astro {
+        bottom: 30px;
+        left: calc(50% + 20px);
+    }
 }
 
 @keyframes astroFloat {

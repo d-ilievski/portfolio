@@ -1,24 +1,23 @@
 .Container {
-    width: 100%;
+    width: 75%;
     min-height: 100vh;
-    margin: 0;
-    padding: 30px;
-    padding-left: 100px;
+    margin: auto;
     box-sizing: border-box;
     background: white;
     scroll-snap-align: start;
     position: relative;
+
 }
 
 .TilesContainer {
     /* width: 1024px; */
-    margin: auto;
+    /* margin: auto; */
 }
 
 .TilesRow {
     width: 100%;
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     justify-content: space-around;
     margin-bottom: 30px;
 }
@@ -32,6 +31,12 @@
     animation-delay: .5s;
     transform-origin: 50% 50%;
     visibility: hidden;
+}
+
+@media screen and (max-width: 587px) {
+    .TilesRow > * {
+        margin-bottom: 10px;
+    }
 }
 
 @keyframes appear {

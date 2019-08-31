@@ -138,14 +138,14 @@
         flex: auto;
     }
 
-    .ContentItem {
+    .ContentWrapper .ContentItem {
         margin: 10px;
         animation-delay: 0 !important;
         transition-delay: 0 !important;
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 800px) {
     .ContentWrapper {
         justify-content: space-evenly;
     }

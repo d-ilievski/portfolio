@@ -45,7 +45,7 @@
     border-style: solid;
     border-color: #000000;
     max-width: 250px;
-    max-height: fit-content;
+    /* max-height: fit-content; */
     padding: 20px 20px;
 }
 
