@@ -17,7 +17,7 @@
 
 .PanelLeft {
     width: 360px;
-    padding-top: 20px;
+    /* padding-top: 20px; */
 }
 
 .PanelLeft p {
@@ -69,6 +69,9 @@
     outline: none;
     border: .5px solid rgb(51, 51, 51);
     transition: all .3s ease-out;
+    margin-top: 10px;
+
+    border-radius: 0;
 }
 
 .TextArea:focus {
@@ -124,6 +127,13 @@
         left: calc(50% + 20px);
     }
 }
+
+@media screen and (max-width: 320px) {
+    .PanelLeft {
+        font-size: .8rem;
+    }
+}
+
 
 @keyframes astroFloat {
     0% {

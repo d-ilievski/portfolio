@@ -16,18 +16,18 @@ class ServicesSplash extends Component {
     }
 
     componentDidMount() {
-        this.updateRatio();
-        window.addEventListener("resize", this.updateRatio);
+        // this.updateRatio();
+        // window.addEventListener("resize", this.updateRatio);
     }
 
-    updateRatio = () => {
-        const cHeight = this.container.clientHeight;
-        const cWidth = this.container.clientWidth;
-        const eHeight = this.fill.clientHeight;
-        const eWidth = this.fill.clientWidth;
-        this.ratioX = (cWidth + 100) / eWidth;
-        this.ratioY = (cHeight + 100) / eHeight;
-    }
+    // updateRatio = () => {
+    //     const cHeight = this.container.clientHeight;
+    //     const cWidth = this.container.clientWidth;
+    //     const eHeight = this.fill.clientHeight;
+    //     const eWidth = this.fill.clientWidth;
+    //     this.ratioX = (cWidth + 100) / eWidth;
+    //     this.ratioY = (cHeight + 100) / eHeight;
+    // }
 
     handleChange = () => {
 
@@ -84,19 +84,19 @@ class ServicesSplash extends Component {
                 className={classes.Container}
                 ref={container => this.container = container}>
 
-                <div
+                {/* <div
                     className={classes.FloatingButton}
                     onClick={this.handleChange}
                     ref={servicesFloatingBtn => this.servicesFloatingBtn = servicesFloatingBtn}></div>
 
-                <div className={classes.Background} ref={fill => this.fill = fill}></div>
+                <div className={classes.Background} ref={fill => this.fill = fill}></div> */}
 
                 <h1 className={aboutClasses.Heading + ' wow ' + aboutClasses.Appear} data-wow-delay="0.2s">
                     <span>SERVICES</span>
                 </h1>
 
                 <div className={classes.ContentWrapper}>
-                    <div className={`${classes.ContentItem} wow ${classes.appearAndOpen}`} data-wow-delay="0.4s" data-wow-offset="220">
+                    <div className={`${classes.ContentItem} wow ${classes.appearAndOpen}`} data-wow-offset="200">
                         <div className={`${classes.Icon}`}>
                             <FontAwesomeIcon
                                 className={`wow ${classes.Grow}`}
@@ -126,7 +126,7 @@ class ServicesSplash extends Component {
                             {/* <strong className={classes.Link}>Read More</strong> */}
                         </div>
                     </div>
-                    <div className={classes.ContentItem + ' wow ' + classes.appearAndOpen} data-wow-delay="0.6s" data-wow-offset="220">
+                    <div className={classes.ContentItem + ' wow ' + classes.appearAndOpen} data-wow-offset="200">
                         <div className={classes.Icon}>
                             <FontAwesomeIcon icon={this.state.designerModeDelayed ? faUser : faCogs} size="2x" className={`wow ${classes.Grow}`}></FontAwesomeIcon>
                             {/* <ResponsivenessLogo/> */}
@@ -151,7 +151,7 @@ class ServicesSplash extends Component {
                             {/* <strong className={classes.Link}>Read More</strong> */}
                         </div>
                     </div>
-                    <div className={classes.ContentItem + ' wow ' + classes.appearAndOpen} data-wow-delay="0.8s" data-wow-offset="220">
+                    <div className={classes.ContentItem + ' wow ' + classes.appearAndOpen} data-wow-offset="200">
                         <div className={classes.Icon}>
                             <FontAwesomeIcon
                                 className={`wow ${classes.Grow}`}

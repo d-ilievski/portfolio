@@ -45,24 +45,24 @@ class AboutGraph extends Component {
                 }}>
                     <div className={classes.GraphVariables}>
                         <span className={classes.GraphVariable}>JavaScript</span>
-                        <span className={classes.GraphVariable}>CSS3</span>
+                        <span className={classes.GraphVariable}>CSS</span>
                         <span className={classes.GraphVariable}>React</span>
                         <span className={classes.GraphVariable}>Vue.js</span>
-                        <span className={classes.GraphVariable}>Spring Boot</span>
-                        <span className={classes.GraphVariable}>Java EE</span>
+                        <span className={classes.GraphVariable}>Knockout</span>
+                        <span className={classes.GraphVariable}>Spring</span>
                     </div>
                     <div className={classes.GraphChart}>
                         <div
                             style={{
                             display: 'flex'
                         }}>
-                            <div data-wow-delay="0s" className={['wow', classes.GraphChartItem, classes.Item90].join(' ')}></div>
+                            <div data-wow-delay="0s" className={['wow', classes.GraphChartItem, classes.Item100].join(' ')}></div>
                         </div>
                         <div
                             style={{
                             display: 'flex'
                         }}>
-                            <div data-wow-delay=".1s" className={['wow', classes.GraphChartItem, classes.Item80].join(' ')}></div>
+                            <div data-wow-delay=".1s" className={['wow', classes.GraphChartItem, classes.Item90].join(' ')}></div>
                         </div>
                         <div
                             style={{
@@ -74,7 +74,7 @@ class AboutGraph extends Component {
                             style={{
                             display: 'flex'
                         }}>
-                            <div data-wow-delay=".3s" className={['wow', classes.GraphChartItem, classes.Item60].join(' ')}></div>
+                            <div data-wow-delay=".3s" className={['wow', classes.GraphChartItem, classes.Item80].join(' ')}></div>
                         </div>
                         <div
                             style={{
@@ -86,7 +86,7 @@ class AboutGraph extends Component {
                             style={{
                             display: 'flex'
                         }}>
-                            <div data-wow-delay=".5s" className={['wow', classes.GraphChartItem, classes.Item80].join(' ')}></div>
+                            <div data-wow-delay=".5s" className={['wow', classes.GraphChartItem, classes.Item60].join(' ')}></div>
                         </div>
 
                     </div>
@@ -101,12 +101,12 @@ class AboutGraph extends Component {
                     flexGrow: '1',
                 }}>
                     <div className={classes.GraphVariables}>
-                        <span className={classes.GraphVariable}>Adobe Photoshop</span>
-                        <span className={classes.GraphVariable}>Adobe Illustrator</span>
-                        <span className={classes.GraphVariable}>Adobe InDesign</span>
-                        <span className={classes.GraphVariable}>Print Design</span>
-                        <span className={classes.GraphVariable}>Branding</span>
+                        <span className={classes.GraphVariable}>Photoshop</span>
+                        <span className={classes.GraphVariable}>Illustrator</span>
+                        <span className={classes.GraphVariable}>Adobe Xd</span>
                         <span className={classes.GraphVariable}>UI/UX</span>
+                        <span className={classes.GraphVariable}>Branding</span>
+                        <span className={classes.GraphVariable}>Prototyping</span>
                     </div>
                     <div className={`${classes.GraphChart}`}>
                         <div
@@ -115,25 +115,25 @@ class AboutGraph extends Component {
                             }}
                             
                             >
-                            <div data-wow-delay="0s" className={['wow', classes.GraphChartItem, classes.Item80].join(' ')}></div>
+                            <div data-wow-delay="0s" className={['wow', classes.GraphChartItem, classes.Item70].join(' ')}></div>
                         </div>
                         <div
                             style={{
                             display: 'flex'
                         }}>
-                            <div data-wow-delay=".1s" className={['wow', classes.GraphChartItem, classes.Item90].join(' ')}></div>
+                            <div data-wow-delay=".1s" className={['wow', classes.GraphChartItem, classes.Item80].join(' ')}></div>
                         </div>
                         <div
                             style={{
                             display: 'flex'
                         }}>
-                            <div data-wow-delay=".2s" className={['wow', classes.GraphChartItem, classes.Item60].join(' ')}></div>
+                            <div data-wow-delay=".2s" className={['wow', classes.GraphChartItem, classes.Item70].join(' ')}></div>
                         </div>
                         <div
                             style={{
                             display: 'flex'
                         }}>
-                            <div data-wow-delay=".3s" className={['wow', classes.GraphChartItem, classes.Item100].join(' ')}></div>
+                            <div data-wow-delay=".3s" className={['wow', classes.GraphChartItem, classes.Item90].join(' ')}></div>
                         </div>
                         <div
                             style={{

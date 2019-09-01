@@ -35,7 +35,7 @@ class AboutSplash extends Component {
 
                     <div className={classes.Content}>
 
-                        <div className={`${classes.NameCard} wow ${classes.Appear}`} data-wow-offset="300">
+                        <div className={`${classes.NameCard} wow ${classes.Appear}`} data-wow-offset="150">
                             <img className={classes.Image} alt='slika na daniel hehe' src={daniel}/>
                             <h3>Who's this guy?</h3>
                             <p className={classes.CardParagraph}>I'm Daniel Ilievski from <a className={classes.Grow} rel="noopener noreferrer" target="_blank" href="https://www.google.com/maps/place/Skopje/@41.6809254,16.3102679,7z"><strong>Skopje</strong></a> and I'm a frontend developer at <a className={classes.Grow} rel="noopener noreferrer" target="_blank" href="https://www.emitknowledge.com/"><strong>EmitKnowledge</strong></a>.</p>

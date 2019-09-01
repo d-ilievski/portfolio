@@ -2,7 +2,8 @@
     padding-top: 30px;
     padding-bottom: 30px;
     min-height: 100vh;
-    width: 100%;
+    width: 75%;
+    margin: auto;
     background: white;
     position: relative;
 
@@ -47,8 +48,7 @@
 }
 
 .ContentWrapper {
-    margin: auto;
-    width: 75%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -56,8 +56,8 @@
 }
 
 .ContentWrapper .ContentItem {
-    border: 5px solid white;
-    mix-blend-mode: difference;
+    border: 5px solid black;
+    /* mix-blend-mode: difference; */
     width: 200px;
     height: 200px;
 
@@ -69,16 +69,17 @@
 
     opacity: 0;
     transform: translateY(50px);
+    color: black;
 }
 
 .ContentWrapper .ContentItem:hover {
     height: 350px;
-    background: white;
+    /* background: white; */
 }
 
 .ContentWrapper .ContentItem.appearAndOpen {
     animation-name: appearAndOpen;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
 }
 
@@ -94,8 +95,8 @@
 }
 
 .ContentWrapper .ContentItem .Icon svg {
-    color: white;
-    mix-blend-mode: difference;
+    color: black;
+    /* mix-blend-mode: difference; */
 }
 
 /* .ContentWrapper .ContentItem .Icon:hover, */
@@ -165,7 +166,7 @@
         background: unset;
     }
 
-    25%, 75% {
+    50%, 75% {
         transform: translateY(0);
         opacity: 1;
         height: 200px;
@@ -176,7 +177,7 @@
         transform: translateY(0);
         opacity: 1;
         height: 350px;
-        background: white;
+        /* background: white; */
     }
 }
 
