@@ -1,27 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "c6fc414990849800b939",
-    "url": "/portfolio/static/css/main.1d808683.chunk.css"
+    "revision": "a119f16e29f0fb899e6c",
+    "url": "/portfolio/static/css/main.bd4ab2ce.chunk.css"
   },
   {
-    "revision": "c6fc414990849800b939",
-    "url": "/portfolio/static/js/main.c6fc4149.chunk.js"
+    "revision": "a119f16e29f0fb899e6c",
+    "url": "/portfolio/static/js/main.a119f16e.chunk.js"
   },
   {
-    "revision": "62b6e40f024d802f866e",
-    "url": "/portfolio/static/js/1.62b6e40f.chunk.js"
+    "revision": "88dc64a15eaa287bdf78",
+    "url": "/portfolio/static/js/1.88dc64a1.chunk.js"
   },
   {
     "revision": "ee2a100325fd284f0097",
     "url": "/portfolio/static/js/runtime~main.ee2a1003.js"
   },
   {
-    "revision": "c19b20e95eef9a059cedfb40cb3911b5",
-    "url": "/portfolio/static/media/menusano-bg.c19b20e9.jpg"
-  },
-  {
     "revision": "ede67e3d0cb564dccbd929cdb5f2f032",
     "url": "/portfolio/static/media/daniel.ede67e3d.JPG"
+  },
+  {
+    "revision": "c19b20e95eef9a059cedfb40cb3911b5",
+    "url": "/portfolio/static/media/menusano-bg.c19b20e9.jpg"
   },
   {
     "revision": "f190d99ae0d003a18292008276160631",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/astro.7ed3742b.svg"
   },
   {
-    "revision": "2129f68d97660b6ddd4ffc29cecc2b06",
+    "revision": "a66b35a8bd72cb64867ba734daeb4501",
     "url": "/portfolio/index.html"
   }
 ];
