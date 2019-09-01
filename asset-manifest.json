@@ -1,7 +1,7 @@
 {
-  "main.css": "/portfolio/static/css/main.bd4ab2ce.chunk.css",
-  "main.js": "/portfolio/static/js/main.a119f16e.chunk.js",
-  "main.js.map": "/portfolio/static/js/main.a119f16e.chunk.js.map",
+  "main.css": "/portfolio/static/css/main.06d617fb.chunk.css",
+  "main.js": "/portfolio/static/js/main.5cc5df80.chunk.js",
+  "main.js.map": "/portfolio/static/js/main.5cc5df80.chunk.js.map",
   "static/js/1.88dc64a1.chunk.js": "/portfolio/static/js/1.88dc64a1.chunk.js",
   "static/js/1.88dc64a1.chunk.js.map": "/portfolio/static/js/1.88dc64a1.chunk.js.map",
   "runtime~main.js": "/portfolio/static/js/runtime~main.ee2a1003.js",
@@ -12,8 +12,8 @@
   "static/media/oblecime-bg.jpg": "/portfolio/static/media/oblecime-bg.78beb417.jpg",
   "static/media/trackadoBg.png": "/portfolio/static/media/trackadoBg.f4becc90.png",
   "static/media/astro.svg": "/portfolio/static/media/astro.7ed3742b.svg",
-  "static/css/main.bd4ab2ce.chunk.css.map": "/portfolio/static/css/main.bd4ab2ce.chunk.css.map",
+  "static/css/main.06d617fb.chunk.css.map": "/portfolio/static/css/main.06d617fb.chunk.css.map",
   "index.html": "/portfolio/index.html",
-  "precache-manifest.b94fd7af12ebc52a85cd1826734471b5.js": "/portfolio/precache-manifest.b94fd7af12ebc52a85cd1826734471b5.js",
+  "precache-manifest.1c532169f67bb34ddd0947155946f607.js": "/portfolio/precache-manifest.1c532169f67bb34ddd0947155946f607.js",
   "service-worker.js": "/portfolio/service-worker.js"
 }
