@@ -1,6 +1,6 @@
 .Container {
     width: 75%;
-    min-height: 100vh;
+    min-height: 500px;
     margin: auto;
     box-sizing: border-box;
     background: white;
@@ -31,6 +31,12 @@
     animation-delay: .5s;
     transform-origin: 50% 50%;
     visibility: hidden;
+}
+
+.Paragraph {
+    text-align: center;
+    margin: 20px 0 40px 0;
+    font-size: 1.1em;
 }
 
 @media screen and (max-width: 587px) {

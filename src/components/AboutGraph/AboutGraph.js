@@ -45,7 +45,7 @@ class AboutGraph extends Component {
                 }}>
                     <div className={classes.GraphVariables}>
                         <span className={classes.GraphVariable}>JavaScript</span>
-                        <span className={classes.GraphVariable}>CSS</span>
+                        <span className={classes.GraphVariable}>CSS/SASS</span>
                         <span className={classes.GraphVariable}>React</span>
                         <span className={classes.GraphVariable}>Vue.js</span>
                         <span className={classes.GraphVariable}>Knockout</span>

@@ -32,9 +32,12 @@ class ProjectsSplash extends Component {
                 </p>
 
                 <div className={classes.TilesContainer}>
+                    {/* <p className={classes.Paragraph}>
+                        Some of the projects I have worked on
+                    </p> */}
                     <div className={classes.TilesRow}>
                         <Tile delay="0.2s" animation={'wow ' + aboutClasses.Appear} link="http://app.menusano.com" linkText="Visit Website" logo={menusano} background={menusanoBg} description="An easy-to-use nutrition analysis software for the Foodservice Industry" />
-                        <Tile delay="0.4s" animation={'wow ' + aboutClasses.Appear} link="https://www.trackado.com/" linkText="Visit Website" logo={trackado} background={trackadoBg} description="An easy-to-use nutrition analysis software for the Foodservice Industry" />
+                        <Tile delay="0.4s" animation={'wow ' + aboutClasses.Appear} link="https://www.trackado.com/" linkText="Visit Website" logo={trackado} background={trackadoBg} description="Contract management service made easy." />
                         <Tile delay="0.6s" animation={'wow ' + aboutClasses.Appear} link="https://github.com/d-ilievski/obleci.me-frontend/blob/master/131176_sistem_za_pomos_na_bezdomnici.docx?raw=true" linkText="Download thesis (MK)" logo={oblecime} background={oblecimeBg} description="A charity service for helping homeless people and people in need." />
                         {/* <Tile delay="0.8s" animation={'wow ' + aboutClasses.Appear} logo={menusano} background={menusanoBg} description="An easy-to-use nutrition analysis software for the Foodservice Industry" /> */}
                     </div>
