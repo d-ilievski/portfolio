@@ -33,24 +33,23 @@ class ContactSplash extends Component {
 
                 <h1
                     className={aboutClasses.Heading + ' wow ' + aboutClasses.Appear}
-                    data-wow-delay="0.5s">
+                    data-wow-offset="50">
                     <span>CONTACT</span>
                 </h1>
 
                 <div className={classes.Content}>
                     <div className={classes.PanelLeft}>
-                        <p className={'wow ' + aboutClasses.Appear} data-wow-delay=".65s">
+                        <p className={'wow ' + aboutClasses.Appear}>
                             If you would like to build something great or just say hi, <span onClick={this.onClickToFocusContact} className={classes.TextLink}>fill out the form</span> or email me on <a target="_top" href='mailto:daniel.d.ilievski@gmail.com' className={classes.TextLink}>daniel.d.ilievski@gmail.com</a>. 
                         </p>
                         
-                        <p className={'wow ' + aboutClasses.Appear} data-wow-delay=".85s">
+                        <p className={'wow ' + aboutClasses.Appear}>
                             Also you can find me on <span className={classes.TextLink}><a href="https://www.linkedin.com/in/daniel-ilievski/" rel="noopener noreferrer " target="_blank"><FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>&nbsp;LinkedIn</a></span>, see some of my projects on <span className={classes.TextLink}><a href="https://github.com/d-ilievski" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>&nbsp;GitHub</a></span> or check out my <span className={classes.TextLink}><a href="https://www.instagram.com/vo1d.mind/" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>&nbsp;Instagram</a></span> where I post some pictures I take and edit.
                         </p>
                     </div>
                     <div className={classes.FormContainer}>
                         <form
                             className={classes.Form + ' wow ' + aboutClasses.Appear}
-                            data-wow-delay="1s"
                             target="contact_me"
                             action="https://formspree.io/daniel.d.ilievski@gmail.com"
                             method="POST"
@@ -83,14 +82,14 @@ class ContactSplash extends Component {
                     </div>
                 </div>
 
-                <div className={' wow ' + aboutClasses.Appear} data-wow-delay=".5s">
+                <div className={' wow ' + aboutClasses.Appear}>
                     <img src={astro} alt="astro" className={classes.Astro}/>
 
                     <div
                         style={{
                         fontFamily: "'Courier New', monospace",
                         textAlign: 'center',
-                        marginTop: "130px"
+                        marginTop: "80px"
                     }}>
                         Crafted with&nbsp;
                         <span
