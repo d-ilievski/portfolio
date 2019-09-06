@@ -35,6 +35,11 @@
     /* margin: auto; */
 }
 
+.ImageContainer {
+    max-height: 300px;
+    overflow: hidden;
+}
+
 .Image {
     width: 100%;
 }

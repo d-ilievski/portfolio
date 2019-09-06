@@ -47,8 +47,8 @@ class AboutGraph extends Component {
                         <span className={classes.GraphVariable}>JavaScript</span>
                         <span className={classes.GraphVariable}>CSS/SASS</span>
                         <span className={classes.GraphVariable}>React</span>
-                        <span className={classes.GraphVariable}>Vue.js</span>
                         <span className={classes.GraphVariable}>Knockout</span>
+                        <span className={classes.GraphVariable}>Vue.js</span>
                         <span className={classes.GraphVariable}>Spring</span>
                     </div>
                     <div className={classes.GraphChart}>
@@ -74,13 +74,13 @@ class AboutGraph extends Component {
                             style={{
                             display: 'flex'
                         }}>
-                            <div data-wow-delay=".3s" className={['wow', classes.GraphChartItem, classes.Item80].join(' ')}></div>
+                            <div data-wow-delay=".3s" className={['wow', classes.GraphChartItem, classes.Item70].join(' ')}></div>
                         </div>
                         <div
                             style={{
                             display: 'flex'
                         }}>
-                            <div data-wow-delay=".4s" className={['wow', classes.GraphChartItem, classes.Item70].join(' ')}></div>
+                            <div data-wow-delay=".4s" className={['wow', classes.GraphChartItem, classes.Item90].join(' ')}></div>
                         </div>
                         <div
                             style={{

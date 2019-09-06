@@ -101,7 +101,7 @@
 }
 
 .GraphOption {
-    writing-mode: vertical-lr;
+    /* writing-mode: vertical-rl; */
     text-orientation: sideways;
     font-size: .7em;
     font-weight: bold;
@@ -110,22 +110,24 @@
     cursor: pointer;
 
     transition: all 100ms ease;
+    transform: rotate(-90deg);
 }
 
 .VerticalLine {
-    writing-mode: vertical-lr;
+    /* writing-mode: vertical-lr; */
     text-orientation: sideways;
     font-size: .7em;
     font-weight: bold;
     color: darkgray;
+    transform: rotate(-90deg);
 }
 
 .GraphOption:hover {
-    transform: scale(1.7);
+    transform: scale(1.7) rotate(-90deg);
 }
 
 .GraphOptionActive {
-    transform: scale(1.7);
+    transform: scale(1.7) rotate(-90deg);;
     color: black;
 }
 
