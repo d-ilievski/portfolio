@@ -111,6 +111,9 @@
 
     transition: all 100ms ease;
     transform: rotate(-90deg);
+
+    animation: breathe 2s ease;
+    animation-iteration-count: infinite;
 }
 
 .VerticalLine {
@@ -124,11 +127,13 @@
 
 .GraphOption:hover {
     transform: scale(1.7) rotate(-90deg);
+    animation: unset;
 }
 
 .GraphOptionActive {
     transform: scale(1.7) rotate(-90deg);;
     color: black;
+    animation: unset;
 }
 
 .Percentage {
@@ -174,6 +179,20 @@
         margin: 0 10px 0 20px;
         min-width: unset;
         /* max-width: 100px; */
+    }
+}
+
+@keyframes breathe {
+    0% {
+        transform: scale(1) rotate(-90deg)
+    }
+
+    50% {
+        transform: scale(1.2) rotate(-90deg)
+    }
+
+    100% {
+        transform: scale(1) rotate(-90deg)
     }
 }
 
