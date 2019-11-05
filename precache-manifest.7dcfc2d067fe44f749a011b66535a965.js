@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/astro.7ed3742b.svg"
   },
   {
-    "revision": "c7c20f674bfb575950dcd84d8718930a",
+    "revision": "1c68c808ca38b713966fbdc009284774",
     "url": "/portfolio/index.html"
   }
 ];
